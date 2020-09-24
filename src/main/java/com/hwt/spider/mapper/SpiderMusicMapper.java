@@ -1,17 +1,10 @@
 package com.hwt.spider.mapper;
 
 import com.hwt.spider.bean.pojo.SpiderMusic;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface SpiderMusicMapper {
-    int deleteByPrimaryKey(Integer id);
-
-    int insert(SpiderMusic record);
-
-    int insertSelective(SpiderMusic record);
-
-    SpiderMusic selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(SpiderMusic record);
-
-    int updateByPrimaryKey(SpiderMusic record);
+    int insertList(@Param("spiderMusics") List<SpiderMusic> spiderMusics);
 }

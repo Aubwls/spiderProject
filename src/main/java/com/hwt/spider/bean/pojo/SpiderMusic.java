@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class SpiderMusic extends AbstractPojo {
 
-    private String name;
+    private String musicName;
 
     private String author;
 
