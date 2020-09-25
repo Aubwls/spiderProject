@@ -1,4 +1,4 @@
-package com.hwt.spider.bean.pojo;
+package com.hwt.spider.entity.pojo;
 
 import lombok.Data;
 

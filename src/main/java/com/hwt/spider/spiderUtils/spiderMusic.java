@@ -1,6 +1,6 @@
 package com.hwt.spider.spiderUtils;
 
-import com.hwt.spider.bean.pojo.SpiderMusic;
+import com.hwt.spider.entity.pojo.SpiderMusic;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -43,7 +43,9 @@ public class spiderMusic {
                     spiderMusic.setMusicName(song.get(0).text());
                     spiderMusic.setAuthor(song.get(1).text());
                     spiderMusic.setUrl(uri.select("div.url p.downurl").text());
-                    spiderMusic.setCreateTime(new Date());
+                    Date date = new Date();
+                    System.out.println(date.getHours());
+                    spiderMusic.setCreateTime(date);
                     spiderMusics.add(spiderMusic);
                 }
             }

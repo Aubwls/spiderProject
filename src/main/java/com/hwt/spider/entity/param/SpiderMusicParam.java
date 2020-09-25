@@ -1,4 +1,4 @@
-package com.hwt.spider.bean.param;
+package com.hwt.spider.entity.param;
 
 import lombok.Data;
 

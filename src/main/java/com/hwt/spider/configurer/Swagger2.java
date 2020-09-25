@@ -20,7 +20,7 @@ public class Swagger2 {
                 .apiInfo(apiInfo())
                 .select()
                 //扫描包路径
-                .apis(RequestHandlerSelectors.basePackage("com.spider"))
+                .apis(RequestHandlerSelectors.basePackage("com.hwt.spider.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
@@ -32,7 +32,7 @@ public class Swagger2 {
                 .title("wt爬虫")
                 //描述
                 .description("接口文档")
-                .version("1.0")
+                .version("5.2.0")
                 .build();
     }
 }

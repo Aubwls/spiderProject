@@ -1,6 +1,6 @@
 package com.hwt.spider.result;
 
-import com.hwt.spider.bean.pojo.Result;
+import com.hwt.spider.entity.pojo.Result;
 
 public class RetureResult {
     private static final String HttpSuccess = "200";

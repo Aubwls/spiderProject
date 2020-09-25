@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hwt.spider.mapper.SpiderMusicMapper">
-  <resultMap id="BaseResultMap" type="com.hwt.spider.bean.pojo.SpiderMusic">
+  <resultMap id="BaseResultMap" type="com.hwt.spider.entity.pojo.SpiderMusic">
     <id column="ID" jdbcType="INTEGER" property="id" />
     <result column="MUSIC_NAME" jdbcType="VARCHAR" property="musicName" />
     <result column="AUTHOR" jdbcType="VARCHAR" property="author" />
@@ -14,14 +14,14 @@
   <insert id="insertList" parameterType="java.util.List">
     insert into spider_music ( MUSIC_NAME, AUTHOR,
       URL, CREATE_TIME)
-    select MUSIC_NAME,AUTHOR,URL,CREATE_TIME from t (
-    <foreach collection="spiderMusics" item="iteam" separator="UNION ALL">
+    select MUSIC_NAME,AUTHOR,URL,CREATE_TIME from(
+    <foreach collection="spiderMusics" item="item" separator="UNION ALL">
       select
       #{item.musicName,jdbcType=VARCHAR} as MUSIC_NAME ,
       #{item.author,jdbcType=VARCHAR} as AUTHOR,
-      #{url,jdbcType=VARCHAR} as URL,
-      #{createTime,jdbcType=TIMESTAMP} as CREATE_TIME
-      from dual;
+      #{item.url,jdbcType=VARCHAR} as URL,
+      #{item.createTime,jdbcType=TIMESTAMP} as CREATE_TIME
+      from dual
     </foreach>) t
   </insert>
 
