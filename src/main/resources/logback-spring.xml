@@ -2,7 +2,7 @@
 <configuration>
     <!-- 属性文件:在properties文件中找到对应的配置项 -->
     <springProperty scope="context" name="logging.path" source="logging.path"/>
-    <contextName>cloudPlatform</contextName>
+    <contextName>spider</contextName>
 
     <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -15,7 +15,7 @@
 
     <!--根据日志级别分离日志，分别输出到不同的文件-->
     <appender name="fileInfoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>${logging.path}/cloudPlatform.log</File>
+        <File>${logging.path}/spider.log</File>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>
                 %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{50} - %msg%n
@@ -25,7 +25,7 @@
         <!--滚动策略-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--按时间保存日志 修改格式可以按小时、按天、月来保存-->
-            <fileNamePattern>${logging.path}/cloudPlatform.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <fileNamePattern>${logging.path}/spider.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
             <!--保存时长-->
             <MaxHistory>20</MaxHistory>
             <!--文件大小-->
@@ -39,7 +39,7 @@
     </appender>
 
     <appender name="fileErrorLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>${logging.path}/cloudPlatform.error.log</File>
+        <File>${logging.path}/spider.error.log</File>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>ERROR</level>
             <onMatch>ACCEPT</onMatch>
@@ -54,7 +54,7 @@
         <!--滚动策略-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--路径-->
-            <fileNamePattern>${logging.path}/cloudPlatform.error.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
+            <fileNamePattern>${logging.path}/spider.error.%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
             <MaxHistory>20</MaxHistory>
             <!--文件大小-->
             <totalSizeCap>1GB</totalSizeCap>
