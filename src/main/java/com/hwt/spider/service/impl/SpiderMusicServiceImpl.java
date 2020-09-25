@@ -25,7 +25,7 @@ public class SpiderMusicServiceImpl implements SpiderMusicService {
         List<SpiderMusic> spiderMusics = null;
         spiderMusics = spiderMusicMapper.selectByParam(keyword);
         if (spiderMusics.size() == 0){
-            spiderMusic.musicList(keyword);
+            spiderMusics = spiderMusic.musicList(keyword);
             if (spiderMusics.size() != 0){
                 spiderMusicMapper.insertList(spiderMusics);
             }
