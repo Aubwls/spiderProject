@@ -19,7 +19,7 @@ import java.util.List;
 public class spiderMusic {
     private final static String path = "https://www.sq688.com";
     private static int pageSize = 1;
-    private static List<SpiderMusic> spiderMusics = new ArrayList<>();
+    private static List<com.hwt.spider.entity.pojo.SpiderMusic> spiderMusics = new ArrayList<>();
     private static void parseMusic(String keyword,Integer pageNum){
         BufferedWriter bw = null;
         try{
@@ -34,7 +34,7 @@ public class spiderMusic {
             Elements select = doc.select("div.song").select("tr");
             if(select.size() != 0){
                 for (int i = 1; i < select.size() ; i++) {
-                    SpiderMusic spiderMusic = new SpiderMusic();
+                    com.hwt.spider.entity.pojo.SpiderMusic spiderMusic = new com.hwt.spider.entity.pojo.SpiderMusic();
                     Element element = select.get(i);
                     Elements song = element.select("td");
                     String downloadUrl = path + song.get(7).select("a[href]").attr("href");

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hwt.spider.mapper.SpiderFictionMapper">
+  <resultMap id="BaseResultMap" type="com.hwt.spider.entity.pojo.SpiderFiction">
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="FICTION_NAME" jdbcType="VARCHAR" property="fictionName" />
+    <result column="AUTHOR" jdbcType="VARCHAR" property="author" />
+    <result column="URL" jdbcType="VARCHAR" property="url" />
+    <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    FICTION_NAME, AUTHOR, URL
+  </sql>
+  <insert id="insertList" parameterType="java.util.List">
+    insert into spider_fiction ( MUSIC_NAME, AUTHOR,
+    URL, CREATE_TIME)
+    select FICTION_NAME,AUTHOR,URL,CREATE_TIME from(
+    <foreach collection="spiderFictions" item="item" separator="UNION ALL">
+      select
+      #{item.fictionName,jdbcType=VARCHAR} as FICTION_NAME ,
+      #{item.author,jdbcType=VARCHAR} as AUTHOR,
+      #{item.url,jdbcType=VARCHAR} as URL,
+      #{item.createTime,jdbcType=TIMESTAMP} as CREATE_TIME
+      from dual
+    </foreach>) t
+  </insert>
+  <select id="selectByParam" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from spider_fiction
+    <where>
+      <if test="keyword != null and keyword != ''">
+        FICTION_NAME like '%${keyword}%' or AUTHOR like '%${keyword}%'
+      </if>
+    </where>
+  </select>
+</mapper>
