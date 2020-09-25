@@ -9,7 +9,7 @@
     <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
   </resultMap>
   <sql id="Base_Column_List">
-    ID, MUSIC_NAME, AUTHOR, URL, CREATE_TIME
+    MUSIC_NAME, AUTHOR, URL
   </sql>
   <insert id="insertList" parameterType="java.util.List">
     insert into spider_music ( MUSIC_NAME, AUTHOR,
@@ -24,5 +24,14 @@
       from dual
     </foreach>) t
   </insert>
-
+  <select id="selectByParam" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from spider_music
+    <where>
+      <if test="keyword != null and keyword != ''">
+        MUSIC_NAME like '%${keyword}%' or AUTHOR like '%${keyword}%'
+      </if>
+    </where>
+  </select>
 </mapper>

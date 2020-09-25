@@ -14,3 +14,8 @@ spring:
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
   type-aliases-package: com.hwt.spider.entity.pojo
+#sql打印在控制台
+logging:
+  level:
+    root: info
+    com.hwt.spider.mapper: debug

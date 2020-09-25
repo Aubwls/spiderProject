@@ -2,6 +2,7 @@ package com.hwt.spider.controller;
 
 import com.hwt.spider.entity.param.SpiderMusicParam;
 import com.hwt.spider.entity.pojo.Result;
+import com.hwt.spider.entity.pojo.SpiderMusic;
 import com.hwt.spider.result.RetureResult;
 import com.hwt.spider.service.SpiderMusicService;
 import io.swagger.annotations.Api;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author: hwt
@@ -28,8 +30,8 @@ public class MusicController {
 
     @PostMapping("/list")
     @ApiOperation(value = "音乐列表",notes = "音乐列表")
-    public Result list(@ApiParam(value = "{\"keyword\":\"关键字\"}") @RequestBody SpiderMusicParam spiderMusicParam){
-        spiderMusicService.list(spiderMusicParam.getKeyword());
-        return RetureResult.OK();
+    public Result<List<SpiderMusic>> list(@ApiParam(value = "{\"keyword\":\"关键字\"}") @RequestBody SpiderMusicParam spiderMusicParam){
+        List<SpiderMusic> list = spiderMusicService.list(spiderMusicParam.getKeyword());
+        return RetureResult.OK(list);
     }
 }

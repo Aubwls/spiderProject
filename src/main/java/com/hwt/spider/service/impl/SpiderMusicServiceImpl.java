@@ -1,11 +1,13 @@
 package com.hwt.spider.service.impl;
 
+import com.hwt.spider.entity.pojo.SpiderMusic;
 import com.hwt.spider.mapper.SpiderMusicMapper;
 import com.hwt.spider.service.SpiderMusicService;
 import com.hwt.spider.spiderUtils.spiderMusic;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author: hwt
@@ -18,8 +20,14 @@ public class SpiderMusicServiceImpl implements SpiderMusicService {
     private SpiderMusicMapper spiderMusicMapper;
 
     @Override
-    public void list(String keyword) {
-        spiderMusicMapper.insertList(spiderMusic.musicList(keyword));
+    public List<SpiderMusic> list(String keyword) {
+        List<SpiderMusic> spiderMusics = null;
+        spiderMusics = spiderMusicMapper.selectByParam(keyword);
+        if (spiderMusics.size() == 0){
+            spiderMusics = spiderMusic.musicList(keyword);
+            spiderMusicMapper.insertList(spiderMusics);
+        }
+        return spiderMusics;
     }
 
 }

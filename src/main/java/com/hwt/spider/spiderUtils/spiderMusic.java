@@ -44,7 +44,6 @@ public class spiderMusic {
                     spiderMusic.setAuthor(song.get(1).text());
                     spiderMusic.setUrl(uri.select("div.url p.downurl").text());
                     Date date = new Date();
-                    System.out.println(date.getHours());
                     spiderMusic.setCreateTime(date);
                     spiderMusics.add(spiderMusic);
                 }

@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface SpiderMusicMapper {
     void insertList(@Param("spiderMusics") List<SpiderMusic> spiderMusics);
+
+    List<SpiderMusic> selectByParam(@Param("keyword") String keyword);
 }

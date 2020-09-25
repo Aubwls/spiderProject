@@ -1,5 +1,9 @@
 package com.hwt.spider.service;
 
+import com.hwt.spider.entity.pojo.SpiderMusic;
+
+import java.util.List;
+
 /**
  * @author: hwt
  * @date: 2020/9/24 21:23
@@ -7,6 +11,6 @@ package com.hwt.spider.service;
  */
 public interface SpiderMusicService {
 
-    void list(String keyword);
+    List<SpiderMusic> list(String keyword);
 
 }
