@@ -1,8 +1,8 @@
 package com.hwt.spider.controller;
 
 import com.hwt.spider.entity.param.SpiderFictionParam;
-import com.hwt.spider.entity.pojo.Result;
-import com.hwt.spider.result.RetureResult;
+import com.hwt.spider.result.Result;
+import com.hwt.spider.result.ReturnResult;
 import com.hwt.spider.service.SpiderFictionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -31,6 +31,6 @@ public class SpiderController {
     @ApiOperation(value = "小说列表", notes = "小说列表")
     public Result list(
             @ApiParam(value = "{\"keyword\":\"关键字\"}") @RequestBody SpiderFictionParam spiderFictionParam){
-        return RetureResult.OK(spiderFictionService.getList(spiderFictionParam.getKeyword()));
+        return ReturnResult.OK(spiderFictionService.getList(spiderFictionParam.getKeyword()));
     }
 }

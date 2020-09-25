@@ -21,4 +21,4 @@ logging:
     com.hwt.spider.mapper: debug
 
 download:
-   path:classpath*:downloadPath/
+   path: classpath*:downloadPath/

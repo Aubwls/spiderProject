@@ -1,9 +1,9 @@
 package com.hwt.spider.controller;
 
 import com.hwt.spider.entity.param.SpiderMusicParam;
-import com.hwt.spider.entity.pojo.Result;
+import com.hwt.spider.result.Result;
 import com.hwt.spider.entity.pojo.SpiderMusic;
-import com.hwt.spider.result.RetureResult;
+import com.hwt.spider.result.ReturnResult;
 import com.hwt.spider.service.SpiderMusicService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -32,13 +32,13 @@ public class MusicController {
     @ApiOperation(value = "音乐搜索",notes = "音乐搜索")
     public Result<List<SpiderMusic>> list(@ApiParam(value = "{\"keyword\":\"关键字\"}") @RequestBody SpiderMusicParam spiderMusicParam){
         List<SpiderMusic> list = spiderMusicService.getList(spiderMusicParam.getKeyword());
-        return RetureResult.OK(list);
+        return ReturnResult.OK(list);
     }
 
     @PostMapping("/listPrecise")
     @ApiOperation(value = "音乐精确搜索",notes = "音乐精确搜索")
     public Result<List<SpiderMusic>> listPrecise(@ApiParam(value = "{\"author\":\"作者\",\"musicName\":\"音乐名字\"}") @RequestBody SpiderMusicParam spiderMusicParam){
         List<SpiderMusic> list = spiderMusicService.getPrecis(spiderMusicParam);
-        return RetureResult.OK(list);
+        return ReturnResult.OK(list);
     }
 }
