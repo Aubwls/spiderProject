@@ -29,9 +29,16 @@ public class MusicController {
     private SpiderMusicService spiderMusicService;
 
     @PostMapping("/list")
-    @ApiOperation(value = "音乐列表",notes = "音乐列表")
+    @ApiOperation(value = "音乐搜索",notes = "音乐搜索")
     public Result<List<SpiderMusic>> list(@ApiParam(value = "{\"keyword\":\"关键字\"}") @RequestBody SpiderMusicParam spiderMusicParam){
-        List<SpiderMusic> list = spiderMusicService.list(spiderMusicParam.getKeyword());
+        List<SpiderMusic> list = spiderMusicService.getList(spiderMusicParam.getKeyword());
+        return RetureResult.OK(list);
+    }
+
+    @PostMapping("/listPrecise")
+    @ApiOperation(value = "音乐精确搜索",notes = "音乐精确搜索")
+    public Result<List<SpiderMusic>> listPrecise(@ApiParam(value = "{\"author\":\"作者\",\"musicName\":\"音乐名字\"}") @RequestBody SpiderMusicParam spiderMusicParam){
+        List<SpiderMusic> list = spiderMusicService.getPrecis(spiderMusicParam);
         return RetureResult.OK(list);
     }
 }

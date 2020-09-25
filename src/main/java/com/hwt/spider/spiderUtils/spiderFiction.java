@@ -1,14 +1,20 @@
 package com.hwt.spider.spiderUtils;
 
+import com.hwt.spider.entity.pojo.SpiderFiction;
+import com.hwt.spider.entity.pojo.SpiderMusic;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -17,10 +23,21 @@ import java.util.Scanner;
  * @Description
  */
 public class spiderFiction {
+
+    @Value("${download.path}")
+    private static String downloadPath;
+
     private static final String HttpPath = "http://www.bookshuku.com/";
+
+    private static List<SpiderFiction> SpiderFictions = new ArrayList<>();
+
     private static void parse(String keyword){
         try {
-            Element ele = Jsoup.connect(HttpPath + "search.html").data("searchkey", keyword).get().select("div.searchTopic").get(0);
+            Elements searchkey = Jsoup.connect(HttpPath + "search.html").data("searchkey", keyword).get().select("div.searchTopic");
+            if (searchkey.size() == 0){
+                return ;
+            }
+            Element ele = searchkey.get(0);
             String href = ele.select("a").attr("href");
             String [] str = ele.select("a").text().trim().split("/");
             String fictionName = str[0];
@@ -31,18 +48,25 @@ public class spiderFiction {
                     .select("div.globalBox div#Frame tbody tr")
                     .get(5)
                     .select("td a").get(2).attr("href");
+            SpiderFiction spiderFiction = new SpiderFiction();
+            spiderFiction.setAuthor(author);
+            spiderFiction.setFictionName(fictionName);
+            spiderFiction.setUrl(downloadPath);
+            spiderFiction.setCreateTime(new Date());
+            SpiderFictions.add(spiderFiction);
+            //downloadFiction(downloadPath,keyword);
         }catch (Exception e){
             e.printStackTrace();
         }
     }
     //下载在本地
-    private static void downloadFiction(String downloadPath, String keyword){
-        File file = new File("src/downloadFictionPath/"+keyword+".txt");
+    private static void downloadFiction(String httpPath, String keyword){
+        File file = new File(downloadPath+keyword+".txt");
         BufferedOutputStream bos = null;
         BufferedInputStream bis = null;
         try{
             bos = new BufferedOutputStream(new FileOutputStream(file));
-            URL url = new URL(downloadPath);
+            URL url = new URL(httpPath);
             bis = new BufferedInputStream(url.openConnection().getInputStream());
             byte[] arr = new byte[1024*8];
             int bytesRead = 0;
@@ -61,9 +85,9 @@ public class spiderFiction {
             }
         }
     }
-    public static void main(String[] args) {
-        String keyword = null;
-        keyword = new Scanner(System.in).nextLine();
+    public static List<SpiderFiction> fictionList(String keyword) {
+        SpiderFictions.clear();
         parse(keyword);
+        return SpiderFictions;
     }
 }

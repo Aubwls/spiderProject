@@ -34,4 +34,17 @@
       </if>
     </where>
   </select>
+  <select id="selectPrecise" parameterType="com.hwt.spider.entity.pojo.SpiderMusic" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from spider_music
+    <where>
+      <if test="musicName != null and musicName != ''">
+        MUSIC_NAME = #{musicName,jdbcType=VARCHAR}
+      </if>
+      <if test="author != null and author != ''">
+        and AUTHOR = #{author,jdbcType=VARCHAR}
+      </if>
+    </where>
+  </select>
 </mapper>

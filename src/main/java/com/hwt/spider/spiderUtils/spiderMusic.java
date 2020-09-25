@@ -19,7 +19,7 @@ import java.util.List;
 public class spiderMusic {
     private final static String path = "https://www.sq688.com";
     private static int pageSize = 1;
-    private static List<com.hwt.spider.entity.pojo.SpiderMusic> spiderMusics = new ArrayList<>();
+    private static List<SpiderMusic> spiderMusics = new ArrayList<>();
     private static void parseMusic(String keyword,Integer pageNum){
         BufferedWriter bw = null;
         try{
@@ -34,12 +34,14 @@ public class spiderMusic {
             Elements select = doc.select("div.song").select("tr");
             if(select.size() != 0){
                 for (int i = 1; i < select.size() ; i++) {
-                    com.hwt.spider.entity.pojo.SpiderMusic spiderMusic = new com.hwt.spider.entity.pojo.SpiderMusic();
+                    SpiderMusic spiderMusic = new SpiderMusic();
                     Element element = select.get(i);
                     Elements song = element.select("td");
+                    if (song.size() < 2){
+                        return ;
+                    }
                     String downloadUrl = path + song.get(7).select("a[href]").attr("href");
-                    Document uri = Jsoup.connect(downloadUrl)
-                            .get();
+                    Document uri = Jsoup.connect(downloadUrl).get();
                     spiderMusic.setMusicName(song.get(0).text());
                     spiderMusic.setAuthor(song.get(1).text());
                     spiderMusic.setUrl(uri.select("div.url p.downurl").text());
@@ -67,7 +69,7 @@ public class spiderMusic {
             Elements pageSizeEle = pageDoc.select("div.pagewarp a");
             pageSize = Integer.parseInt(pageSizeEle.get(pageSizeEle.size()-2).text());
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
     }
 

@@ -12,7 +12,7 @@
     FICTION_NAME, AUTHOR, URL
   </sql>
   <insert id="insertList" parameterType="java.util.List">
-    insert into spider_fiction ( MUSIC_NAME, AUTHOR,
+    insert into spider_fiction ( FICTION_NAME, AUTHOR,
     URL, CREATE_TIME)
     select FICTION_NAME,AUTHOR,URL,CREATE_TIME from(
     <foreach collection="spiderFictions" item="item" separator="UNION ALL">

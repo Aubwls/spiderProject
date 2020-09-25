@@ -1,5 +1,6 @@
 package com.hwt.spider.service.impl;
 
+import com.hwt.spider.entity.param.SpiderMusicParam;
 import com.hwt.spider.entity.pojo.SpiderMusic;
 import com.hwt.spider.mapper.SpiderMusicMapper;
 import com.hwt.spider.service.SpiderMusicService;
@@ -20,13 +21,42 @@ public class SpiderMusicServiceImpl implements SpiderMusicService {
     private SpiderMusicMapper spiderMusicMapper;
 
     @Override
-    public List<SpiderMusic> list(String keyword) {
+    public List<SpiderMusic> getList(String keyword) {
         List<SpiderMusic> spiderMusics = null;
         spiderMusics = spiderMusicMapper.selectByParam(keyword);
         if (spiderMusics.size() == 0){
-            spiderMusics = spiderMusic.musicList(keyword);
-            spiderMusicMapper.insertList(spiderMusics);
+            spiderMusic.musicList(keyword);
+            if (spiderMusics.size() != 0){
+                spiderMusicMapper.insertList(spiderMusics);
+            }
         }
+        return spiderMusics;
+    }
+
+    @Override
+    public List<SpiderMusic> getPrecis(SpiderMusicParam spiderMusicParam) {
+        List<SpiderMusic> spiderMusics = null;
+        String author = spiderMusicParam.getAuthor();
+        String musicName = spiderMusicParam.getMusicName();
+        SpiderMusic spiderMusicTemp = new SpiderMusic();
+        spiderMusicTemp.setAuthor(author);
+        spiderMusicTemp.setMusicName(musicName);
+        spiderMusics = spiderMusicMapper.selectPrecise(spiderMusicTemp);
+        if (spiderMusics.size() == 0) {
+            if (author != null && !"".equals(author)) {
+                List<SpiderMusic> spiderMusicsForAuthor = spiderMusic.musicList(author);
+                if (spiderMusicsForAuthor.size() != 0) {
+                    spiderMusicMapper.insertList(spiderMusicsForAuthor);
+                }
+            }
+            if (musicName != null && !"".equals(musicName)) {
+                List<SpiderMusic> spiderMusicsForMusicName = spiderMusic.musicList(musicName);
+                if (spiderMusicsForMusicName.size() != 0) {
+                    spiderMusicMapper.insertList(spiderMusicsForMusicName);
+                }
+            }
+        }
+        spiderMusics = spiderMusicMapper.selectPrecise(spiderMusicTemp);
         return spiderMusics;
     }
 

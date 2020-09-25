@@ -1,5 +1,6 @@
 package com.hwt.spider.service;
 
+import com.hwt.spider.entity.param.SpiderMusicParam;
 import com.hwt.spider.entity.pojo.SpiderMusic;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
  */
 public interface SpiderMusicService {
 
-    List<SpiderMusic> list(String keyword);
+    List<SpiderMusic> getList(String keyword);
 
+    List<SpiderMusic> getPrecis(SpiderMusicParam spiderMusicParam);
 }
