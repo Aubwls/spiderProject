@@ -38,6 +38,7 @@ public class MusicController {
     @PostMapping("/listPrecise")
     @ApiOperation(value = "音乐精确搜索",notes = "音乐精确搜索")
     public Result<List<SpiderMusic>> listPrecise(@ApiParam(value = "{\"author\":\"作者\",\"musicName\":\"音乐名字\"}") @RequestBody SpiderMusicParam spiderMusicParam){
+        System.out.println(1/0);
         List<SpiderMusic> list = spiderMusicService.getPrecis(spiderMusicParam);
         return ReturnResult.OK(list);
     }
