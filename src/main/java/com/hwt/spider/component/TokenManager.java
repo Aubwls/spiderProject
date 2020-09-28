@@ -21,7 +21,6 @@ public class TokenManager {
     public String createToken(Long userId){
         String token = userId.toString()+"-"+UUID.randomUUID().toString();
         String key = userId.toString()+"_token";
-        System.out.println(redisTemplate);
         redisTemplate.opsForValue().set(key,token,1000*60*60, TimeUnit.SECONDS);
         return token;
     }

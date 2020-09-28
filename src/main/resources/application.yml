@@ -29,7 +29,6 @@ logging:
     com.hwt.spider.mapper: debug
   file:
     path: ./logs
-  config: src/main/resources/logback-spring.xml
 
 download:
    path: classpath*:downloadPath/

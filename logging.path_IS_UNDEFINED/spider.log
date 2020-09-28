@@ -75,3 +75,338 @@
 2020-09-28 11:07:37 [http-nio-8081-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-09-28 11:07:37 [http-nio-8081-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2020-09-28 11:07:37 [http-nio-8081-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-09-28 20:20:04 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on MSI with PID 16836 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-09-28 20:20:04 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-09-28 20:20:05 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-28 20:20:05 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-28 20:20:05 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-09-28 20:20:06 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-28 20:20:06 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-28 20:20:06 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-28 20:20:06 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-28 20:20:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-09-28 20:20:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1761 ms
+2020-09-28 20:20:07 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-28 20:20:07 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-28 20:20:07 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-28 20:20:07 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-09-28 20:20:07 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-28 20:20:07 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-28 20:20:07 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-28 20:20:08 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-09-28 20:20:08 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 4.428 seconds (JVM running for 5.758)
+2020-09-28 20:20:12 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-28 20:20:12 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-28 20:20:12 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-09-28 20:22:58 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on MSI with PID 14072 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-09-28 20:22:58 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-09-28 20:22:59 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-28 20:22:59 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-28 20:22:59 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-09-28 20:22:59 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-28 20:22:59 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-28 20:22:59 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-28 20:22:59 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-28 20:23:00 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-09-28 20:23:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1377 ms
+2020-09-28 20:23:00 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-28 20:23:00 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-28 20:23:01 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-28 20:23:01 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-09-28 20:23:01 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-28 20:23:01 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-28 20:23:01 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-28 20:23:01 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-09-28 20:23:01 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 3.525 seconds (JVM running for 4.471)
+2020-09-28 20:23:07 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-28 20:23:07 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-28 20:23:07 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-09-28 20:27:59 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on MSI with PID 5284 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-09-28 20:27:59 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-09-28 20:28:00 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-28 20:28:00 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-28 20:28:00 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-28 20:28:00 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-28 20:28:00 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-28 20:28:00 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-28 20:28:00 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-28 20:28:00 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-09-28 20:28:00 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1309 ms
+2020-09-28 20:28:01 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-28 20:28:01 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-28 20:28:02 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-28 20:28:02 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-09-28 20:28:02 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-28 20:28:02 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-28 20:28:02 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-28 20:28:02 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-09-28 20:28:02 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 3.226 seconds (JVM running for 4.034)
+2020-09-28 20:28:15 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-28 20:28:15 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-28 20:28:15 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-09-28 20:34:53 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on MSI with PID 16916 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-09-28 20:34:53 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-09-28 20:34:54 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-28 20:34:54 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-28 20:34:54 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-09-28 20:34:54 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-28 20:34:54 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-28 20:34:54 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-28 20:34:54 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-28 20:34:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-09-28 20:34:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1264 ms
+2020-09-28 20:34:55 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-28 20:34:55 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-28 20:34:56 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-28 20:34:56 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-09-28 20:34:56 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-28 20:34:56 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-28 20:34:56 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-28 20:34:56 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-09-28 20:34:56 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 3.022 seconds (JVM running for 3.813)
+2020-09-28 20:35:05 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-28 20:35:05 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-28 20:35:05 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-09-28 20:42:30 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on MSI with PID 4472 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-09-28 20:42:30 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-09-28 20:42:31 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-28 20:42:31 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-28 20:42:31 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2020-09-28 20:42:31 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-09-28 20:42:31 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-09-28 20:42:31 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-09-28 20:42:31 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-28 20:42:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-09-28 20:42:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1285 ms
+2020-09-28 20:42:32 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-28 20:42:32 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-28 20:42:32 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-09-28 20:42:32 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-09-28 20:42:32 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-28 20:42:32 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-28 20:42:32 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-28 20:42:32 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-09-28 20:42:32 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 3.032 seconds (JVM running for 3.783)
+2020-09-28 20:42:41 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-28 20:42:41 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-09-28 20:42:41 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-09-28 20:42:41 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-09-28 20:42:41 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-09-28 20:42:41 [http-nio-8081-exec-1] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 20:42:42 [http-nio-8081-exec-1] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 20:42:42 [http-nio-8081-exec-1] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 20:44:19 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 20:44:19 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 20:44:19 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 20:54:18 [http-nio-8081-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@39a7c829 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 20:54:23 [http-nio-8081-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@14a328e9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 20:54:28 [http-nio-8081-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@13425cd4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 20:54:33 [http-nio-8081-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2bf19188 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 20:54:38 [http-nio-8081-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2698007f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 20:54:43 [http-nio-8081-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@64264966 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 20:55:05 [http-nio-8081-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5de874f6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 20:55:10 [http-nio-8081-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@57101f86 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 20:55:15 [http-nio-8081-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@c431270 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 20:55:20 [http-nio-8081-exec-6] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@23ca7c9a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 20:55:20 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 20:55:20 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 20:55:20 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:04:49 [http-nio-8081-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@51eaa055 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:04:54 [http-nio-8081-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5b12cb25 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:04:59 [http-nio-8081-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1a7cadbc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:05:04 [http-nio-8081-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@62c28a41 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:05:09 [http-nio-8081-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7e3fb16c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:05:14 [http-nio-8081-exec-8] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@f205250 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:07:02 [http-nio-8081-exec-10] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@784d880f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:07:07 [http-nio-8081-exec-10] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@72b5e37f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:07:12 [http-nio-8081-exec-10] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@23ae9844 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:07:17 [http-nio-8081-exec-10] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5bb9b123 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:07:17 [http-nio-8081-exec-10] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:07:17 [http-nio-8081-exec-10] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:07:17 [http-nio-8081-exec-10] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:14:33 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5e7a8063 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:14:38 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5482eb13 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:14:43 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1bf38c2c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:14:48 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@63422470 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:14:53 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@71af90a8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:14:58 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@76baf05d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:16:06 [http-nio-8081-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@38bc0d11 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:16:11 [http-nio-8081-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@32446661 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:16:16 [http-nio-8081-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7746ee4d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:16:21 [http-nio-8081-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@467bb8ea (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:16:21 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:16:21 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:16:21 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:17:22 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:17:22 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:17:22 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:18:01 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:18:01 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:18:01 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:18:59 [http-nio-8081-exec-8] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:18:59 [http-nio-8081-exec-8] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:19:00 [http-nio-8081-exec-8] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:19:54 [http-nio-8081-exec-9] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:19:54 [http-nio-8081-exec-9] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:19:54 [http-nio-8081-exec-9] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:21:51 [http-nio-8081-exec-1] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:21:51 [http-nio-8081-exec-1] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:21:51 [http-nio-8081-exec-1] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:22:11 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:22:11 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:22:11 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:22:12 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:22:12 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:22:12 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:22:12 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:22:12 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:22:12 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:22:12 [http-nio-8081-exec-5] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:22:12 [http-nio-8081-exec-5] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:22:12 [http-nio-8081-exec-5] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:22:12 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:22:12 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:22:12 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:23:08 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:23:08 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:23:08 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:24:48 [http-nio-8081-exec-9] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:24:48 [http-nio-8081-exec-9] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:24:48 [http-nio-8081-exec-9] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:29:22 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f6c0e65 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:29:27 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4940d9a4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:29:32 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2988b219 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:29:37 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6a73b591 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:29:42 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6401e87c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:29:47 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f30eb83 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:29:58 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@424ed29c (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:30:03 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@347bdb21 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:30:08 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@795457da (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:30:13 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7a93a9c3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:30:13 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:30:13 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:30:13 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:31:12 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:31:12 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:31:12 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:31:15 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:31:15 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:31:15 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:31:24 [http-nio-8081-exec-5] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction
+2020-09-28 21:31:24 [http-nio-8081-exec-5] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:31:24 [http-nio-8081-exec-5] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 4
+2020-09-28 21:31:41 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:31:41 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:31:41 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:31:54 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:31:54 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:31:54 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:32:41 [http-nio-8081-exec-8] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:32:41 [http-nio-8081-exec-8] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:32:41 [http-nio-8081-exec-8] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:34:05 [http-nio-8081-exec-10] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:34:05 [http-nio-8081-exec-10] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:34:05 [http-nio-8081-exec-10] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:36:34 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:36:34 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:36:34 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:37:46 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:37:46 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:37:46 [http-nio-8081-exec-4] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:39:26 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:39:26 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:39:26 [http-nio-8081-exec-6] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:40:12 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:40:12 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:40:12 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:44:04 [http-nio-8081-exec-9] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:44:04 [http-nio-8081-exec-9] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:44:04 [http-nio-8081-exec-9] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 21:53:22 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3e708d2a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:53:27 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5a8849f3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:53:32 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f721fd7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:53:37 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b9df816 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:53:42 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@501bb5fe (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:53:47 [http-nio-8081-exec-1] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b4cbdb0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:54:41 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@34c4eddc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:54:46 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@d6e677f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:54:51 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2a69c500 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:54:56 [http-nio-8081-exec-2] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@11b5294a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 21:54:56 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元尊%' or AUTHOR like '%元尊%'
+2020-09-28 21:54:56 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 21:54:56 [http-nio-8081-exec-2] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 22:05:37 [http-nio-8081-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@40763b6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 22:05:42 [http-nio-8081-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@40f57d34 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 22:05:47 [http-nio-8081-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4f193700 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 22:05:52 [http-nio-8081-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@56971850 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 22:05:57 [http-nio-8081-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@413f4d90 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 22:06:02 [http-nio-8081-exec-4] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7c33ad00 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 22:06:13 [http-nio-8081-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@31ede3d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 22:06:18 [http-nio-8081-exec-5] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5993810a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-09-28 22:06:18 [http-nio-8081-exec-5] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%周杰伦%' or AUTHOR like '%周杰伦%'
+2020-09-28 22:06:18 [http-nio-8081-exec-5] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 22:06:18 [http-nio-8081-exec-5] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 0
+2020-09-28 22:06:19 [http-nio-8081-exec-5] DEBUG c.hwt.spider.mapper.SpiderFictionMapper.insertList - ==>  Preparing: insert into spider_fiction ( FICTION_NAME, AUTHOR, URL, CREATE_TIME) select FICTION_NAME,AUTHOR,URL,CREATE_TIME from( select ? as FICTION_NAME , ? as AUTHOR, ? as URL, ? as CREATE_TIME from dual ) t
+2020-09-28 22:06:19 [http-nio-8081-exec-5] DEBUG c.hwt.spider.mapper.SpiderFictionMapper.insertList - ==> Parameters: 死神爱听周杰伦【更新全本】(txt下载)(String), 佚名(String), http://txt.bookshuku.com/home/down/txt/id/594(String), 2020-09-28 22:06:19.425(Timestamp)
+2020-09-28 22:06:19 [http-nio-8081-exec-5] DEBUG c.hwt.spider.mapper.SpiderFictionMapper.insertList - <==    Updates: 1
+2020-09-28 22:07:22 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%周杰伦%' or AUTHOR like '%周杰伦%'
+2020-09-28 22:07:22 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-09-28 22:07:22 [http-nio-8081-exec-7] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-09-28 22:07:31 [http-nio-8081-exec-8] DEBUG c.h.spider.mapper.SpiderMusicMapper.selectByParam - ==>  Preparing: select MUSIC_NAME, AUTHOR, URL from spider_music WHERE MUSIC_NAME like '%周杰伦%' or AUTHOR like '%周杰伦%'
+2020-09-28 22:07:31 [http-nio-8081-exec-8] DEBUG c.h.spider.mapper.SpiderMusicMapper.selectByParam - ==> Parameters: 
+2020-09-28 22:07:31 [http-nio-8081-exec-8] DEBUG c.h.spider.mapper.SpiderMusicMapper.selectByParam - <==      Total: 144
+2020-09-28 22:08:28 [http-nio-8081-exec-9] DEBUG c.h.spider.mapper.SpiderMusicMapper.selectByParam - ==>  Preparing: select MUSIC_NAME, AUTHOR, URL from spider_music WHERE MUSIC_NAME like '%周杰伦%' or AUTHOR like '%周杰伦%'
+2020-09-28 22:08:28 [http-nio-8081-exec-9] DEBUG c.h.spider.mapper.SpiderMusicMapper.selectByParam - ==> Parameters: 
+2020-09-28 22:08:28 [http-nio-8081-exec-9] DEBUG c.h.spider.mapper.SpiderMusicMapper.selectByParam - <==      Total: 144
+2020-09-28 22:14:49 [main] INFO  com.hwt.spider.SpiderApplicationTests - Starting SpiderApplicationTests on MSI with PID 6292 (started by hometown in E:\spiderProject)
+2020-09-28 22:14:49 [main] INFO  com.hwt.spider.SpiderApplicationTests - No active profile set, falling back to default profiles: default
+2020-09-28 22:14:49 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-28 22:14:49 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-28 22:14:50 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-09-28 22:14:52 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-28 22:14:52 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-28 22:14:53 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-28 22:14:53 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-28 22:14:53 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-28 22:14:53 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-09-28 22:14:53 [main] INFO  com.hwt.spider.SpiderApplicationTests - Started SpiderApplicationTests in 4.5 seconds (JVM running for 5.69)
+2020-09-28 22:14:53 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-28 22:19:57 [main] INFO  com.hwt.spider.SpiderApplicationTests - Starting SpiderApplicationTests on MSI with PID 15176 (started by hometown in E:\spiderProject)
+2020-09-28 22:19:57 [main] INFO  com.hwt.spider.SpiderApplicationTests - No active profile set, falling back to default profiles: default
+2020-09-28 22:19:58 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-28 22:19:58 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-28 22:19:58 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-09-28 22:20:01 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-28 22:20:01 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-28 22:20:01 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-28 22:20:02 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-28 22:20:02 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-28 22:20:02 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-09-28 22:20:02 [main] INFO  com.hwt.spider.SpiderApplicationTests - Started SpiderApplicationTests in 4.701 seconds (JVM running for 5.703)
+2020-09-28 22:20:02 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-28 22:40:04 [main] INFO  com.hwt.spider.SpiderApplicationTests - Starting SpiderApplicationTests on MSI with PID 10428 (started by hometown in E:\spiderProject)
+2020-09-28 22:40:04 [main] INFO  com.hwt.spider.SpiderApplicationTests - No active profile set, falling back to default profiles: default
+2020-09-28 22:40:05 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-28 22:40:05 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-28 22:40:05 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-09-28 22:40:07 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-28 22:40:08 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-28 22:40:08 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-28 22:40:08 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-28 22:40:08 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-28 22:40:08 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-09-28 22:40:08 [main] INFO  com.hwt.spider.SpiderApplicationTests - Started SpiderApplicationTests in 4.801 seconds (JVM running for 6.0)
+2020-09-28 22:40:09 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-28 22:46:48 [main] INFO  com.hwt.spider.SpiderApplicationTests - Starting SpiderApplicationTests on MSI with PID 13788 (started by hometown in E:\spiderProject)
+2020-09-28 22:46:48 [main] INFO  com.hwt.spider.SpiderApplicationTests - No active profile set, falling back to default profiles: default
+2020-09-28 22:46:49 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-28 22:46:49 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-28 22:46:49 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-09-28 22:46:51 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-28 22:46:51 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-28 22:46:52 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-09-28 22:46:52 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-09-28 22:46:52 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-09-28 22:46:52 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-09-28 22:46:52 [main] INFO  com.hwt.spider.SpiderApplicationTests - Started SpiderApplicationTests in 4.724 seconds (JVM running for 5.905)
+2020-09-28 22:46:52 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
