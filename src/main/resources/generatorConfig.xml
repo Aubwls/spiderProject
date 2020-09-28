@@ -36,7 +36,7 @@
 
         <!--生成对应表及类名-->
         <!-- 指定数据库表 tableName=""-->
-        <table tableName="SPIDER_FICTION" enableCountByExample="false"
+        <table tableName="SPIDER_USER" enableCountByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                enableUpdateByExample="false" selectByExampleQueryId="false">
             <!-- 是否只生成POJO对象 -->

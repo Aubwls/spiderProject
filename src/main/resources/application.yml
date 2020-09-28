@@ -11,6 +11,14 @@ spring:
     username: spider
     password: spider112
     driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    database: 1
+    host: 47.100.164.178
+    port: 6379
+    password:
+
+
+
 mybatis:
   mapper-locations: classpath*:mapper/*Mapper.xml
   type-aliases-package: com.hwt.spider.entity.pojo
