@@ -6,12 +6,7 @@ import com.hwt.spider.result.ReturnResult;
 import com.hwt.spider.service.SpiderLoginService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -24,6 +19,7 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/login")
 @Api(value = "登录接口", tags = "登录接口")
+@CrossOrigin
 public class LoginController {
     @Resource
     private SpiderLoginService spiderLoginService;

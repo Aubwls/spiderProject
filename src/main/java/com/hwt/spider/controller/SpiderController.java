@@ -7,10 +7,7 @@ import com.hwt.spider.service.SpiderFictionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -22,6 +19,7 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/fiction")
 @Api(value = "小说接口", tags = "小说接口")
+@CrossOrigin
 public class SpiderController {
 
     @Resource
