@@ -665,3 +665,4 @@
 2020-10-10 12:06:11 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_1
 2020-10-10 12:06:11 [main] INFO  com.hwt.spider.SpiderApplicationTests - Started SpiderApplicationTests in 10.575 seconds (JVM running for 12.958)
 2020-10-10 12:06:11 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-10 13:34:23 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m24s227ms842µs200ns).
