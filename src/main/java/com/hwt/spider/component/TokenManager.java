@@ -21,7 +21,7 @@ public class TokenManager {
     public String createToken(Long userId){
         String token = userId.toString()+"-"+UUID.randomUUID().toString();
         String key = userId.toString()+"_token";
-        redisTemplate.opsForValue().set(key,token,1000*60*60, TimeUnit.SECONDS);
+        redisTemplate.opsForValue().set(key,token,2, TimeUnit.HOURS);
         return token;
     }
     public boolean checkToken(String token){
@@ -43,7 +43,7 @@ public class TokenManager {
             return false;
         }
         //返回检测结果,更新token时间
-        redisTemplate.opsForValue().set(key, token,1000*60*60, TimeUnit.SECONDS);
+        redisTemplate.opsForValue().set(key, token,2, TimeUnit.HOURS);
         return true;
     }
 

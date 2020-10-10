@@ -19,10 +19,13 @@ import javax.annotation.Resource;
  */
 @Service
 public class SpiderLoginServiceImpl implements SpiderLoginService {
+
     @Resource
     private SpiderUserMapper spiderUserMapper;
+
     @Resource
     private TokenManager tokenManager;
+
     @Override
     public String login(LoginParam loginParam) {
         Long accoutNumber = loginParam.getAccoutNumber();
