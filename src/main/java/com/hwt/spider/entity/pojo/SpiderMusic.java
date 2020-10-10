@@ -11,4 +11,5 @@ public class SpiderMusic extends AbstractPojo {
 
     private String url;
 
+    private String extractionCode;
 }

@@ -6,20 +6,22 @@
     <result column="MUSIC_NAME" jdbcType="VARCHAR" property="musicName" />
     <result column="AUTHOR" jdbcType="VARCHAR" property="author" />
     <result column="URL" jdbcType="VARCHAR" property="url" />
+    <result column="EXTRACTION_CODE" jdbcType="VARCHAR" property="extractionCode" />
     <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
   </resultMap>
   <sql id="Base_Column_List">
-    MUSIC_NAME, AUTHOR, URL
+    MUSIC_NAME, AUTHOR, URL, EXTRACTION_CODE
   </sql>
   <insert id="insertList" parameterType="java.util.List">
     insert into spider_music ( MUSIC_NAME, AUTHOR,
-      URL, CREATE_TIME)
-    select MUSIC_NAME,AUTHOR,URL,CREATE_TIME from(
+      URL, EXTRACTION_CODE, CREATE_TIME)
+    select MUSIC_NAME,AUTHOR,URL,EXTRACTION_CODE,CREATE_TIME from(
     <foreach collection="spiderMusics" item="item" separator="UNION ALL">
       select
       #{item.musicName,jdbcType=VARCHAR} as MUSIC_NAME ,
       #{item.author,jdbcType=VARCHAR} as AUTHOR,
       #{item.url,jdbcType=VARCHAR} as URL,
+      #{item.extractionCode,jdbcType=VARCHAR} as EXTRACTION_CODE,
       #{item.createTime,jdbcType=TIMESTAMP} as CREATE_TIME
       from dual
     </foreach>) t
