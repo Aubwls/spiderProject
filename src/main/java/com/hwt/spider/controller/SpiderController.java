@@ -25,10 +25,10 @@ public class SpiderController {
     @Resource
     private SpiderFictionService spiderFictionService;
 
-    @PostMapping("/list")
+    @RequestMapping(value= "/list",produces = "application/json;charset=UTF-8")
     @ApiOperation(value = "小说列表", notes = "小说列表")
-    public Result list(
-            @ApiParam(value = "{\"keyword\":\"关键字\"}") @RequestBody SpiderFictionParam spiderFictionParam){
-        return ReturnResult.OK(spiderFictionService.getList(spiderFictionParam.getKeyword()));
+    public Result list(@RequestParam String keyword){
+        System.out.println(keyword);
+        return ReturnResult.OK(spiderFictionService.getList(keyword));
     }
 }
