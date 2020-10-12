@@ -5,13 +5,10 @@ import com.hwt.spider.result.Result;
 import com.hwt.spider.entity.pojo.SpiderMusic;
 import com.hwt.spider.result.ReturnResult;
 import com.hwt.spider.service.SpiderMusicService;
-import com.sun.deploy.net.HttpResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
-
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
