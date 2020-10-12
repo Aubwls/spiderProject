@@ -26,7 +26,7 @@ public class LoginController {
 
     @PostMapping("/login")
     @ApiOperation(value = "登录操作", tags = "登录操作")
-    public Result login(@RequestBody LoginParam loginParam){
+    public Result<String> login(@RequestBody LoginParam loginParam){
         String token = spiderLoginService.login(loginParam);
         return ReturnResult.OK(token);
     }
@@ -36,5 +36,18 @@ public class LoginController {
     public Result getCode(@RequestBody CodeParam codeParam){
         spiderLoginService.getCode(codeParam);
         return ReturnResult.OK();
+    }
+
+    @PostMapping("/register")
+    @ApiOperation(value = "用户注册", tags = "用户注册")
+    public Result register(@RequestBody LoginParam loginParam){
+        spiderLoginService.register(loginParam);
+        return ReturnResult.OK();
+    }
+
+    @PostMapping("/getAccoutNum")
+    @ApiOperation(value = "获取账号", tags = "获取账号")
+    public Result<String> getAccoutNum(){
+        return ReturnResult.OK(spiderLoginService.getAccoutNum());
     }
 }

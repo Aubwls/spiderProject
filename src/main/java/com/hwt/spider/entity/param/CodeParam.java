@@ -10,7 +10,9 @@ import lombok.Data;
 @Data
 public class CodeParam {
 
-    private String accoutNum;
+    private Long accoutNum;
 
     private String mail;
+
+    private String code;
 }

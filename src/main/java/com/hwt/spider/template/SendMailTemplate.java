@@ -7,7 +7,7 @@ package com.hwt.spider.template;
  */
 public class SendMailTemplate {
 
-    public static String VerficationCode (String accoutNum, String code){
+    public static String VerficationCode (Long accoutNum, String code){
         return "【wtSpider】本次注册验证码为："+code+"(账号为"+accoutNum+")";
     }
 

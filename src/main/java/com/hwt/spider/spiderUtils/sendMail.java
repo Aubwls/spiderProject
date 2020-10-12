@@ -36,7 +36,7 @@ public class sendMail {
         }
     }
 
-    public static void sendCode(String accoutNum, String code, String mail) {
+    public static void sendCode(Long accoutNum, String code, String mail) {
         String command = "echo \"验证码\" | mail -v -s "+ SendMailTemplate.VerficationCode(accoutNum,code) +" "+ mail;
         sendMail(command);
     }

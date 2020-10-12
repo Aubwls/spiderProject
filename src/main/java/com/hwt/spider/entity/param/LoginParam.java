@@ -10,5 +10,12 @@ import lombok.Data;
 @Data
 public class LoginParam {
     private Long accoutNumber;
+
+    private String userName;
+
     private String passWord;
+
+    private String mail;
+
+    private String code;
 }

@@ -12,4 +12,8 @@ public interface SpiderLoginService {
     String login(LoginParam loginParam);
 
     void getCode(CodeParam codeParam);
+
+    void register(LoginParam loginParam);
+
+    String getAccoutNum();
 }
