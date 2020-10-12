@@ -19,16 +19,14 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/fiction")
 @Api(value = "小说接口", tags = "小说接口")
-@CrossOrigin
 public class SpiderController {
 
     @Resource
     private SpiderFictionService spiderFictionService;
 
-    @RequestMapping(value= "/list",produces = "application/json;charset=UTF-8")
+    @RequestMapping(value= "/list", method = RequestMethod.POST)
     @ApiOperation(value = "小说列表", notes = "小说列表")
-    public Result list(@RequestParam String keyword){
-        System.out.println(keyword);
-        return ReturnResult.OK(spiderFictionService.getList(keyword));
+    public Result list(@RequestBody SpiderFictionParam spiderFictionParam){
+        return ReturnResult.OK(spiderFictionService.getList(spiderFictionParam.getKeyword()));
     }
 }

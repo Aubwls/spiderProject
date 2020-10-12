@@ -1,5 +1,6 @@
 package com.hwt.spider.controller;
 
+import com.hwt.spider.entity.param.CodeParam;
 import com.hwt.spider.entity.param.LoginParam;
 import com.hwt.spider.result.Result;
 import com.hwt.spider.result.ReturnResult;
@@ -19,7 +20,6 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/login")
 @Api(value = "登录接口", tags = "登录接口")
-@CrossOrigin
 public class LoginController {
     @Resource
     private SpiderLoginService spiderLoginService;
@@ -29,5 +29,12 @@ public class LoginController {
     public Result login(@RequestBody LoginParam loginParam){
         String token = spiderLoginService.login(loginParam);
         return ReturnResult.OK(token);
+    }
+
+    @PostMapping("/getCode")
+    @ApiOperation(value = "获取验证码", tags = "获取验证码")
+    public Result getCode(@RequestBody CodeParam codeParam){
+        spiderLoginService.getCode(codeParam);
+        return ReturnResult.OK();
     }
 }

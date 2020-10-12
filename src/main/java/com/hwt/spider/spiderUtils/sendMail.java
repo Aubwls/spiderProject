@@ -1,5 +1,9 @@
 package com.hwt.spider.spiderUtils;
 
+import com.hwt.spider.exception.BusinessException;
+import com.hwt.spider.exception.ErrorCode;
+import com.hwt.spider.template.SendMailTemplate;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
@@ -10,7 +14,7 @@ import java.io.InputStreamReader;
  */
 public class sendMail {
 
-    public static void sendMail(String command){
+    private static void sendMail(String command){
         Process process = null;
         try {
             process = Runtime.getRuntime().exec(command);
@@ -25,15 +29,15 @@ public class sendMail {
             int exitValue = process.waitFor();
 
             if(exitValue != 0) {
-                System.out.println("error");
+                throw new BusinessException(ErrorCode.SEND_MAIL_IS_DEFEAT);
             }
         } catch(Exception e) {
             e.printStackTrace();
         }
     }
 
-    public static void main(String[] args) {
-        String command = "ls -l";
+    public static void sendCode(String accoutNum, String code, String mail) {
+        String command = "echo \"验证码\" | mail -v -s "+ SendMailTemplate.VerficationCode(accoutNum,code) +" "+ mail;
         sendMail(command);
     }
 }
