@@ -4,16 +4,13 @@ import lombok.Data;
 
 /**
  * @Author hwt
- * @Date:11:21 2020/9/28
+ * @Date:14:07 2020/10/12
  * @Description
  */
 @Data
-public class LoginParam {
-    private Long accoutNumber;
+public class CodeParam {
 
-    private String userName;
-
-    private String passWord;
+    private Long accoutNum;
 
     private String mail;
 

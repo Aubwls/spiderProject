@@ -1,0 +1,390 @@
+2020-10-12 14:19:00 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 20796 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 14:19:00 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 14:19:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 14:19:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 14:19:02 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-10-12 14:19:03 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 14:19:03 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:19:03 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 14:19:03 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 14:19:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 14:19:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3046 ms
+2020-10-12 14:19:05 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 14:19:05 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 14:19:05 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:19:05 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 14:19:05 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 14:19:05 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 14:19:05 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 14:19:06 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2020-10-12 14:19:06 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingHEAD_1
+2020-10-12 14:19:06 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 14:19:06 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPUT_1
+2020-10-12 14:19:06 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPATCH_1
+2020-10-12 14:19:06 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingDELETE_1
+2020-10-12 14:19:06 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingOPTIONS_1
+2020-10-12 14:19:06 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_1
+2020-10-12 14:19:06 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 7.571 seconds (JVM running for 9.538)
+2020-10-12 14:19:28 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 14:19:28 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 14:19:28 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-10-12 14:23:29 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 22352 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 14:23:29 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 14:23:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 14:23:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 14:23:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-10-12 14:23:31 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 14:23:31 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:23:31 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 14:23:31 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 14:23:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 14:23:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2147 ms
+2020-10-12 14:23:32 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 14:23:32 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 14:23:33 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:23:33 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 14:23:33 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 14:23:33 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 14:23:33 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 14:23:33 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2020-10-12 14:23:33 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingHEAD_1
+2020-10-12 14:23:33 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 14:23:33 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPUT_1
+2020-10-12 14:23:33 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPATCH_1
+2020-10-12 14:23:33 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingDELETE_1
+2020-10-12 14:23:33 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingOPTIONS_1
+2020-10-12 14:23:33 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_1
+2020-10-12 14:23:33 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 5.234 seconds (JVM running for 6.67)
+2020-10-12 14:23:56 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 14:23:56 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 14:23:56 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-10-12 14:30:50 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 14424 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 14:30:50 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 14:30:51 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 14:30:51 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 14:30:51 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2020-10-12 14:30:52 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 14:30:52 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:30:52 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 14:30:52 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 14:30:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 14:30:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1970 ms
+2020-10-12 14:30:53 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 14:30:53 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 14:30:53 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:30:53 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 14:30:53 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 14:30:54 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 14:30:54 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 14:30:54 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingGET_1
+2020-10-12 14:30:54 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingHEAD_1
+2020-10-12 14:30:54 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 14:30:54 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPUT_1
+2020-10-12 14:30:54 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPATCH_1
+2020-10-12 14:30:54 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingDELETE_1
+2020-10-12 14:30:54 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingOPTIONS_1
+2020-10-12 14:30:54 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingTRACE_1
+2020-10-12 14:30:54 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 4.743 seconds (JVM running for 7.45)
+2020-10-12 14:32:13 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 14:32:13 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 14:32:13 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-10-12 14:38:48 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 13952 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 14:38:48 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 14:38:49 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 14:38:49 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 14:38:49 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2020-10-12 14:38:50 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 14:38:50 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:38:50 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 14:38:50 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 14:38:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 14:38:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2094 ms
+2020-10-12 14:38:51 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 14:38:52 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 14:38:52 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:38:52 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 14:38:52 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 14:38:52 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 14:38:52 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 14:38:52 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 14:38:52 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 5.342 seconds (JVM running for 6.74)
+2020-10-12 14:38:59 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 14:38:59 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 14:38:59 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2020-10-12 14:40:44 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 22964 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 14:40:44 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 14:40:45 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 14:40:45 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 14:40:45 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-10-12 14:40:46 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 14:40:46 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:40:46 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 14:40:46 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 14:40:46 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 14:40:46 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2337 ms
+2020-10-12 14:40:48 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 14:40:48 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 14:40:48 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:40:48 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 14:40:48 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 14:40:48 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 14:40:49 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 14:40:49 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 14:40:49 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 6.125 seconds (JVM running for 7.555)
+2020-10-12 14:41:07 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 14:41:07 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 14:41:07 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-10-12 14:44:23 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 11380 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 14:44:23 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 14:44:25 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 14:44:25 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 14:44:25 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2020-10-12 14:44:25 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 14:44:25 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:44:25 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 14:44:25 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 14:44:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 14:44:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2065 ms
+2020-10-12 14:44:27 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 14:44:27 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 14:44:27 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:44:27 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 14:44:27 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 14:44:27 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 14:44:27 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 14:44:27 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 14:44:27 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 4.967 seconds (JVM running for 6.339)
+2020-10-12 14:44:45 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 14:44:45 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 14:44:45 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-10-12 14:46:18 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 22256 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 14:46:18 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 14:46:19 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 14:46:19 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 14:46:20 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-10-12 14:46:20 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 14:46:20 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:46:20 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 14:46:20 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 14:46:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 14:46:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2156 ms
+2020-10-12 14:46:21 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 14:46:22 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 14:46:22 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:46:22 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 14:46:22 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 14:46:22 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 14:46:22 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 14:46:22 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 14:46:22 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 5.058 seconds (JVM running for 6.384)
+2020-10-12 14:46:31 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 14:46:31 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 14:46:31 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-10-12 14:49:28 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 11624 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 14:49:28 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 14:49:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 14:49:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 14:49:30 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-10-12 14:49:30 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 14:49:30 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:49:30 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 14:49:30 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 14:49:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 14:49:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2205 ms
+2020-10-12 14:49:32 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 14:49:32 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 14:49:32 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:49:32 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 14:49:32 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 14:49:32 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 14:49:32 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 14:49:32 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 14:49:32 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 5.194 seconds (JVM running for 6.618)
+2020-10-12 14:49:39 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 14:49:39 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 14:49:39 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2020-10-12 14:51:41 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 17804 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 14:51:41 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 14:51:42 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 14:51:42 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 14:51:42 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-10-12 14:51:43 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 14:51:43 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:51:43 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 14:51:43 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 14:51:43 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 14:51:43 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2146 ms
+2020-10-12 14:51:44 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 14:51:44 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-12 14:51:44 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 14:51:44 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 14:51:44 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 14:51:45 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 14:51:45 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 14:51:45 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 14:51:45 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 5.077 seconds (JVM running for 6.443)
+2020-10-12 14:51:55 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 14:51:55 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 14:51:55 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-10-12 15:00:11 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 22012 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 15:00:11 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 15:00:13 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 15:00:13 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 15:00:13 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2020-10-12 15:00:13 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 15:00:13 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 15:00:13 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 15:00:13 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 15:00:14 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 15:00:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2123 ms
+2020-10-12 15:00:15 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 15:00:15 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 15:00:15 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 15:00:15 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 15:00:15 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 15:00:15 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 15:00:15 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 15:00:15 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 5.027 seconds (JVM running for 6.378)
+2020-10-12 15:01:22 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 15:01:22 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 15:01:22 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-10-12 15:01:22 [http-nio-8081-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-12 15:01:22 [http-nio-8081-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-12 15:01:22 [http-nio-8081-exec-2] DEBUG c.h.spider.mapper.SpiderMusicMapper.selectByParam - ==>  Preparing: select MUSIC_NAME, AUTHOR, URL, EXTRACTION_CODE from spider_music WHERE MUSIC_NAME like '%周杰伦%' or AUTHOR like '%周杰伦%'
+2020-10-12 15:01:22 [http-nio-8081-exec-2] DEBUG c.h.spider.mapper.SpiderMusicMapper.selectByParam - ==> Parameters: 
+2020-10-12 15:01:22 [http-nio-8081-exec-2] DEBUG c.h.spider.mapper.SpiderMusicMapper.selectByParam - <==      Total: 144
+2020-10-12 15:04:57 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 25484 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 15:04:57 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 15:04:57 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 15:04:57 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 15:04:57 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-10-12 15:04:58 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 15:04:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 15:04:58 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 15:04:58 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 15:04:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 15:04:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1072 ms
+2020-10-12 15:04:58 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 15:04:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 15:04:58 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 15:04:58 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 15:04:58 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 15:04:58 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 15:04:59 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 15:04:59 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 2.457 seconds (JVM running for 3.105)
+2020-10-12 15:05:09 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 15:05:09 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 15:05:09 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2020-10-12 15:05:09 [http-nio-8081-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-12 15:05:09 [http-nio-8081-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-12 15:05:09 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元龙%' or AUTHOR like '%元龙%'
+2020-10-12 15:05:09 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-10-12 15:05:09 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-10-12 15:05:28 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 21072 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 15:05:28 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 15:05:29 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 15:05:29 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 15:05:29 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-10-12 15:05:29 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 15:05:29 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 15:05:29 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 15:05:29 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 15:05:29 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 15:05:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1053 ms
+2020-10-12 15:05:30 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 15:05:30 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 15:05:30 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 15:05:30 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 15:05:30 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 15:05:30 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 15:05:30 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 15:05:30 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 2.441 seconds (JVM running for 3.038)
+2020-10-12 15:05:41 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 15:05:41 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 15:05:41 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-10-12 15:05:41 [http-nio-8081-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-12 15:05:41 [http-nio-8081-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-12 15:05:41 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction WHERE FICTION_NAME like '%元龙%' or AUTHOR like '%元龙%'
+2020-10-12 15:05:41 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - ==> Parameters: 
+2020-10-12 15:05:41 [http-nio-8081-exec-3] DEBUG c.h.s.mapper.SpiderFictionMapper.selectByParam - <==      Total: 1
+2020-10-12 15:14:49 [main] INFO  com.hwt.spider.SpiderApplicationTests - Starting SpiderApplicationTests on hsbjb0129 with PID 19100 (started by Administrator in D:\myProject\spiderProject)
+2020-10-12 15:14:49 [main] INFO  com.hwt.spider.SpiderApplicationTests - No active profile set, falling back to default profiles: default
+2020-10-12 15:14:49 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 15:14:50 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 15:14:50 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-10-12 15:14:53 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 15:14:53 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 15:14:53 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 15:14:54 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 15:14:54 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 15:14:54 [main] INFO  com.hwt.spider.SpiderApplicationTests - Started SpiderApplicationTests in 5.69 seconds (JVM running for 6.746)
+2020-10-12 16:09:15 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 24252 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 16:09:15 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 16:09:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 16:09:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 16:09:17 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-10-12 16:09:17 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 16:09:17 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 16:09:17 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 16:09:17 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 16:09:17 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 16:09:17 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1829 ms
+2020-10-12 16:09:18 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 16:09:18 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 16:09:18 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 16:09:18 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 16:09:18 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 16:09:18 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 16:09:19 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 16:09:19 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 4.113 seconds (JVM running for 5.199)
+2020-10-12 16:09:28 [http-nio-8081-exec-7] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 16:09:28 [http-nio-8081-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 16:09:28 [http-nio-8081-exec-7] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-10-12 16:09:28 [http-nio-8081-exec-7] WARN  org.springframework.web.servlet.PageNotFound - No mapping for GET /api/spider/swagger-ui.html
+2020-10-12 16:09:55 [http-nio-8081-exec-10] WARN  org.springframework.web.servlet.PageNotFound - No mapping for GET /api/spider/swagger-ui.html
+2020-10-12 16:10:03 [http-nio-8081-exec-2] WARN  org.springframework.web.servlet.PageNotFound - No mapping for GET /api/spider/swagger-ui.html
+2020-10-12 16:11:57 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 21232 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 16:11:57 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 16:11:57 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 16:11:57 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 16:11:57 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-10-12 16:11:58 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 16:11:58 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 16:11:58 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 16:11:58 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 16:11:58 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 16:11:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1060 ms
+2020-10-12 16:11:58 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 16:11:59 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 16:11:59 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 16:11:59 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 16:11:59 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 16:11:59 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 16:11:59 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 16:11:59 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 2.644 seconds (JVM running for 3.281)
+2020-10-12 16:12:08 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 16:12:08 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 16:12:09 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2020-10-12 16:12:09 [http-nio-8081-exec-1] WARN  org.springframework.web.servlet.PageNotFound - No mapping for GET /api/spider/swagger-ui.html
+2020-10-12 16:36:13 [main] INFO  com.hwt.spider.SpiderApplication - Starting SpiderApplication on hsbjb0129 with PID 21044 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-12 16:36:13 [main] INFO  com.hwt.spider.SpiderApplication - No active profile set, falling back to default profiles: default
+2020-10-12 16:36:14 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-12 16:36:14 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-12 16:36:14 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-10-12 16:36:15 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2020-10-12 16:36:15 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2020-10-12 16:36:15 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-12 16:36:15 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-12 16:36:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring embedded WebApplicationContext
+2020-10-12 16:36:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1235 ms
+2020-10-12 16:36:16 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-12 16:36:16 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2020-10-12 16:36:16 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-12 16:36:16 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-12 16:36:16 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-12 16:36:16 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-12 16:36:16 [main] INFO  s.d.s.w.r.operation.CachingOperationNameGenerator - Generating unique operation named: listUsingPOST_1
+2020-10-12 16:36:16 [main] INFO  com.hwt.spider.SpiderApplication - Started SpiderApplication in 3.281 seconds (JVM running for 3.919)
+2020-10-12 16:36:25 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/api/spider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-12 16:36:25 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-12 16:36:25 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms

@@ -6,11 +6,7 @@ import com.hwt.spider.result.ReturnResult;
 import com.hwt.spider.service.SpiderFictionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -27,10 +23,9 @@ public class SpiderController {
     @Resource
     private SpiderFictionService spiderFictionService;
 
-    @PostMapping("/list")
+    @RequestMapping(value= "/list", method = RequestMethod.POST)
     @ApiOperation(value = "小说列表", notes = "小说列表")
-    public Result list(
-            @ApiParam(value = "{\"keyword\":\"关键字\"}") @RequestBody SpiderFictionParam spiderFictionParam){
+    public Result list(@RequestBody SpiderFictionParam spiderFictionParam){
         return ReturnResult.OK(spiderFictionService.getList(spiderFictionParam.getKeyword()));
     }
 }

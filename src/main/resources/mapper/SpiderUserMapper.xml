@@ -4,12 +4,13 @@
   <resultMap id="BaseResultMap" type="com.hwt.spider.entity.pojo.SpiderUser">
     <id column="ID" jdbcType="INTEGER" property="id" />
     <result column="ACCOUT_NUMBER" jdbcType="INTEGER" property="accoutNumber" />
+    <result column="MAIL" jdbcType="VARCHAR" property="mail" />
     <result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
     <result column="PASS_WORD" jdbcType="VARCHAR" property="passWord" />
     <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
   </resultMap>
   <sql id="Base_Column_List">
-    ID, ACCOUT_NUMBER, USER_NAME, PASS_WORD, CREATE_TIME
+    ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -24,9 +25,9 @@
     where ACCOUT_NUMBER = #{accoutNumber,jdbcType=INTEGER}
   </select>
   <insert id="insert" parameterType="com.hwt.spider.entity.pojo.SpiderUser">
-    insert into spider_user (ACCOUT_NUMBER, USER_NAME,
+    insert into spider_user (ACCOUT_NUMBER, MAIL, USER_NAME,
       PASS_WORD, CREATE_TIME)
-    values (#{accoutNumber,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR},
+    values (#{accoutNumber,jdbcType=INTEGER},#{mail,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR},
       #{passWord,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
   </insert>
 

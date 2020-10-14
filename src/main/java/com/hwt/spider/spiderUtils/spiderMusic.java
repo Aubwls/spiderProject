@@ -44,7 +44,15 @@ public class spiderMusic {
                     Document uri = Jsoup.connect(downloadUrl).get();
                     spiderMusic.setMusicName(song.get(0).text());
                     spiderMusic.setAuthor(song.get(1).text());
-                    spiderMusic.setUrl(uri.select("div.url p.downurl").text());
+                    String path = uri.select("div.url p.downurl").text()
+                            .replace("链接:","")
+                            .replace("提取码:","")
+                            .replace("密码:","")
+                            .replace("  "," ")
+                            .trim();
+                    String split[] = path.split(" ");
+                    spiderMusic.setUrl(split[0].trim());
+                    spiderMusic.setExtractionCode(split[1].trim());
                     Date date = new Date();
                     spiderMusic.setCreateTime(date);
                     spiderMusics.add(spiderMusic);

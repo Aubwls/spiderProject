@@ -5,7 +5,9 @@ import lombok.Data;
 @Data
 public class SpiderUser extends AbstractPojo {
 
-    private Integer accoutNumber;
+    private Long accoutNumber;
+
+    private String mail;
 
     private String userName;
 

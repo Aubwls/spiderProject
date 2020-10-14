@@ -1,5 +1,6 @@
 package com.hwt.spider.service;
 
+import com.hwt.spider.entity.param.CodeParam;
 import com.hwt.spider.entity.param.LoginParam;
 
 /**
@@ -9,4 +10,10 @@ import com.hwt.spider.entity.param.LoginParam;
  */
 public interface SpiderLoginService {
     String login(LoginParam loginParam);
+
+    void getCode(CodeParam codeParam);
+
+    void register(LoginParam loginParam);
+
+    String getAccoutNum();
 }
