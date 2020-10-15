@@ -6,10 +6,15 @@ package com.hwt.spider.component;
  * @Description
  */
 
+import com.alibaba.fastjson.JSON;
+import com.hwt.spider.common.RedisKey;
+import com.hwt.spider.entity.pojo.SpiderUser;
+import com.hwt.spider.mapper.SpiderUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
@@ -17,38 +22,14 @@ import java.util.concurrent.TimeUnit;
 public class TokenManager {
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
-
+    @Resource
+    private SpiderUserMapper spiderUserMapper;
     public String createToken(Long userId){
-        String token = userId.toString()+"-"+UUID.randomUUID().toString();
-        String key = userId.toString()+"_token";
-        redisTemplate.opsForValue().set(key,token,2, TimeUnit.HOURS);
+        String token = UUID.randomUUID().toString();
+        SpiderUser spiderUser = spiderUserMapper.selectByPrimaryKey(userId);
+        redisTemplate.boundValueOps(RedisKey.getLoginTokenKey(userId.toString())).set(token, 2, TimeUnit.HOURS);
+        String jsonObject = JSON.toJSONString(spiderUser);
+        redisTemplate.boundValueOps(RedisKey.getLoginTokenValue(token)).set(jsonObject, 2, TimeUnit.HOURS);
         return token;
-    }
-    public boolean checkToken(String token){
-        //解析出userId和uuid
-        if(token==null || "".equals(token)){
-            return false;
-        }
-        String[] arr1 = token.split("_");
-        if(arr1.length != 2){
-            return false;
-        }
-        //根据redis进行检查
-        String key = arr1[0]+"_token";
-        String r_token = (String)redisTemplate.opsForValue().get(key);
-        if(r_token==null){
-            return false;
-        }
-        if(!token.equals(r_token)){
-            return false;
-        }
-        //返回检测结果,更新token时间
-        redisTemplate.opsForValue().set(key, token,2, TimeUnit.HOURS);
-        return true;
-    }
-
-    public void clear(Long userId){
-        String key = userId.toString()+"_token";
-        redisTemplate.delete(key);
     }
 }

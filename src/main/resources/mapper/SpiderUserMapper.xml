@@ -2,8 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hwt.spider.mapper.SpiderUserMapper">
   <resultMap id="BaseResultMap" type="com.hwt.spider.entity.pojo.SpiderUser">
-    <id column="ID" jdbcType="INTEGER" property="id" />
-    <result column="ACCOUT_NUMBER" jdbcType="INTEGER" property="accoutNumber" />
+    <id column="ID" jdbcType="LONGVARCHAR" property="id" />
+    <result column="ACCOUT_NUMBER" jdbcType="LONGVARCHAR" property="accoutNumber" />
     <result column="MAIL" jdbcType="VARCHAR" property="mail" />
     <result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
     <result column="PASS_WORD" jdbcType="VARCHAR" property="passWord" />
@@ -12,11 +12,11 @@
   <sql id="Base_Column_List">
     ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME
   </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from spider_user
-    where ID = #{id,jdbcType=INTEGER}
+    where ID = #{id,jdbcType=LONGVARCHAR}
   </select>
   <select id="getUserByAccoutNumber" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select

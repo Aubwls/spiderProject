@@ -2,8 +2,10 @@ package com.hwt.spider.entity.pojo;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class SpiderUser extends AbstractPojo {
+public class SpiderUser extends AbstractPojo implements Serializable {
 
     private Long accoutNumber;
 

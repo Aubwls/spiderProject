@@ -150,3 +150,90 @@
 2020-10-15 11:50:52.173 DEBUG 5364 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByParam                  : ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction
 2020-10-15 11:50:52.209 DEBUG 5364 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByParam                  : ==> Parameters: 
 2020-10-15 11:50:52.250 DEBUG 5364 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByParam                  : <==      Total: 14
+2020-10-15 13:37:45.354  INFO 5364 --- [lettuce-nioEventLoop-4-1] io.lettuce.core.protocol.CommandHandler  : null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_74]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_74]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_74]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_74]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_74]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-buffer-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-buffer-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.52.Final.jar:4.1.52.Final]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_74]
+
+2020-10-15 13:37:45.462  INFO 5364 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /47.100.164.178:6379
+2020-10-15 13:37:45.751  WARN 5364 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [47.100.164.178:6379]: No route to host: no further information: /47.100.164.178:6379
+
+io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: No route to host: no further information: /47.100.164.178:6379
+Caused by: java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_74]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_74]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.52.Final.jar:4.1.52.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.52.Final.jar:4.1.52.Final]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_74]
+
+2020-10-15 13:37:45.995  INFO 5364 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ReconnectionHandler    : Reconnected to 47.100.164.178:6379
+2020-10-15 13:37:53.403  WARN 5364 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m899ms311µs700ns).
+2020-10-15 14:02:22.409 DEBUG 5364 --- [http-nio-8081-exec-5] c.h.s.m.S.getUserByAccoutNumber          : ==>  Preparing: select ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ACCOUT_NUMBER = ?
+2020-10-15 14:02:22.411 DEBUG 5364 --- [http-nio-8081-exec-5] c.h.s.m.S.getUserByAccoutNumber          : ==> Parameters: 1415128257(Long)
+2020-10-15 14:02:22.428 DEBUG 5364 --- [http-nio-8081-exec-5] c.h.s.m.S.getUserByAccoutNumber          : <==      Total: 1
+2020-10-15 14:02:44.147  INFO 22120 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 22120 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-15 14:02:44.151  INFO 22120 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
+2020-10-15 14:02:44.996  INFO 22120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-15 14:02:44.998  INFO 22120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-15 14:02:45.025  INFO 22120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-10-15 14:02:45.559  INFO 22120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-15 14:02:45.566  INFO 22120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-15 14:02:45.567  INFO 22120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-15 14:02:45.658  INFO 22120 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
+2020-10-15 14:02:45.658  INFO 22120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1439 ms
+2020-10-15 14:02:46.639  INFO 22120 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-15 14:02:46.921  INFO 22120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-15 14:02:46.922  INFO 22120 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-15 14:02:46.933  INFO 22120 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-15 14:02:46.954  INFO 22120 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-15 14:02:47.053  INFO 22120 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-15 14:02:47.077  INFO 22120 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 3.384 seconds (JVM running for 4.108)
+2020-10-15 14:13:00.570  INFO 21768 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 21768 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-15 14:13:00.572  INFO 21768 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
+2020-10-15 14:13:01.289  INFO 21768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-15 14:13:01.291  INFO 21768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-15 14:13:01.315  INFO 21768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-10-15 14:13:01.802  INFO 21768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-15 14:13:01.810  INFO 21768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-15 14:13:01.810  INFO 21768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-15 14:13:01.910  INFO 21768 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
+2020-10-15 14:13:01.911  INFO 21768 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1286 ms
+2020-10-15 14:13:03.115  INFO 21768 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-15 14:13:03.446  INFO 21768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-15 14:13:03.448  INFO 21768 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-15 14:13:03.462  INFO 21768 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-15 14:13:03.491  INFO 21768 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-15 14:13:03.608  INFO 21768 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-15 14:13:03.630  INFO 21768 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 3.468 seconds (JVM running for 4.155)
+2020-10-15 14:13:26.903  INFO 21768 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-15 14:13:26.904  INFO 21768 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-15 14:13:26.911  INFO 21768 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-10-15 14:13:26.987  INFO 21768 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-15 14:13:27.248  INFO 21768 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-15 14:13:27.254 DEBUG 21768 --- [http-nio-8081-exec-1] c.h.s.m.S.getUserByAccoutNumber          : ==>  Preparing: select ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ACCOUT_NUMBER = ?
+2020-10-15 14:13:27.275 DEBUG 21768 --- [http-nio-8081-exec-1] c.h.s.m.S.getUserByAccoutNumber          : ==> Parameters: 1415128257(Long)
+2020-10-15 14:13:27.308 DEBUG 21768 --- [http-nio-8081-exec-1] c.h.s.m.S.getUserByAccoutNumber          : <==      Total: 1
+2020-10-15 14:13:27.313 DEBUG 21768 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
