@@ -18,6 +18,10 @@ public class BusinessException extends RuntimeException {
     public BusinessException(String code){
         this.code = code;
     }
+    public BusinessException(int httpCode, String code){
+        this.httpCode = httpCode;
+        this.code = code;
+    }
     public Result toReturnResult(){
         return ReturnResult.ERROR(httpCode,code);
     }

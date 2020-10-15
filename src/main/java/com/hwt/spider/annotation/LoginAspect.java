@@ -27,7 +27,7 @@ public class LoginAspect {
 
     @Around("pointcut()")
     public Object Interceptor(ProceedingJoinPoint pjp) throws Throwable {
-        //loginValidationService.verifyLoginUser(pjp);
+        loginValidationService.estimateLogin();
         //继续
         try {
             return pjp.proceed();

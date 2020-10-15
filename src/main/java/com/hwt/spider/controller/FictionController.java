@@ -1,5 +1,6 @@
 package com.hwt.spider.controller;
 
+import com.hwt.spider.annotation.Login;
 import com.hwt.spider.entity.param.SpiderFictionParam;
 import com.hwt.spider.result.Result;
 import com.hwt.spider.result.ReturnResult;
@@ -18,11 +19,12 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/fiction")
 @Api(value = "小说接口", tags = "小说接口")
-public class SpiderController {
+public class FictionController {
 
     @Resource
     private SpiderFictionService spiderFictionService;
 
+    @Login
     @RequestMapping(value= "/list", method = RequestMethod.POST)
     @ApiOperation(value = "小说列表", notes = "小说列表")
     public Result list(@RequestBody SpiderFictionParam spiderFictionParam){
