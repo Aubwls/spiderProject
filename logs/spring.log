@@ -125,3 +125,28 @@
 2020-10-15 11:45:45.818  INFO 14896 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-10-15 11:45:45.826  INFO 14896 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
 2020-10-15 11:45:46.382 ERROR 14896 --- [http-nio-8081-exec-1] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
+2020-10-15 11:50:26.170  INFO 5364 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 5364 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
+2020-10-15 11:50:26.178  INFO 5364 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
+2020-10-15 11:50:27.601  INFO 5364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-15 11:50:27.603  INFO 5364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-15 11:50:27.648  INFO 5364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2020-10-15 11:50:28.732  INFO 5364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-15 11:50:28.747  INFO 5364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-15 11:50:28.747  INFO 5364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-15 11:50:28.903  INFO 5364 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
+2020-10-15 11:50:28.904  INFO 5364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2627 ms
+2020-10-15 11:50:30.528  INFO 5364 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-15 11:50:30.944  INFO 5364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-15 11:50:30.945  INFO 5364 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-15 11:50:30.965  INFO 5364 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-15 11:50:31.002  INFO 5364 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-15 11:50:31.155  INFO 5364 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-15 11:50:31.183  INFO 5364 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 6.037 seconds (JVM running for 7.674)
+2020-10-15 11:50:50.953  INFO 5364 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-15 11:50:50.953  INFO 5364 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-15 11:50:50.961  INFO 5364 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-10-15 11:50:51.807  INFO 5364 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-15 11:50:52.153  INFO 5364 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-15 11:50:52.173 DEBUG 5364 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByParam                  : ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction
+2020-10-15 11:50:52.209 DEBUG 5364 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByParam                  : ==> Parameters: 
+2020-10-15 11:50:52.250 DEBUG 5364 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByParam                  : <==      Total: 14
