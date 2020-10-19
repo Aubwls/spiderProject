@@ -434,3 +434,36 @@
 2020-10-19 16:31:44.923 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
 2020-10-19 16:32:04.153  INFO 12420 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /47.100.164.178:6379
 2020-10-19 16:32:04.174  INFO 12420 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ReconnectionHandler    : Reconnected to 47.100.164.178:6379
+2020-10-19 17:34:27.945  INFO 18084 --- [main] com.hwt.spider.SpiderApplicationTests    : Starting SpiderApplicationTests on MSI with PID 18084 (started by hometown in E:\spiderProject)
+2020-10-19 17:34:27.946  INFO 18084 --- [main] com.hwt.spider.SpiderApplicationTests    : No active profile set, falling back to default profiles: default
+2020-10-19 17:34:28.919  INFO 18084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 17:34:28.922  INFO 18084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 17:34:28.962  INFO 18084 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-10-19 17:34:32.428  INFO 18084 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 17:34:33.444  INFO 18084 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 17:34:33.484  INFO 18084 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 17:34:33.533  INFO 18084 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 17:34:33.741  INFO 18084 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 17:34:33.777  INFO 18084 --- [main] com.hwt.spider.SpiderApplicationTests    : Started SpiderApplicationTests in 6.221 seconds (JVM running for 7.303)
+2020-10-19 17:37:22.646  INFO 13732 --- [main] com.hwt.spider.SpiderApplicationTests    : Starting SpiderApplicationTests on MSI with PID 13732 (started by hometown in E:\spiderProject)
+2020-10-19 17:37:22.648  INFO 13732 --- [main] com.hwt.spider.SpiderApplicationTests    : No active profile set, falling back to default profiles: default
+2020-10-19 17:37:23.687  INFO 13732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 17:37:23.691  INFO 13732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 17:37:23.737  INFO 13732 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2020-10-19 17:37:26.778  INFO 13732 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 17:37:27.752  INFO 13732 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 17:37:27.834  INFO 13732 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 17:37:27.939  INFO 13732 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 17:37:28.344  INFO 13732 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 17:37:28.386  INFO 13732 --- [main] com.hwt.spider.SpiderApplicationTests    : Started SpiderApplicationTests in 6.288 seconds (JVM running for 7.622)
+2020-10-19 17:45:33.733  INFO 16824 --- [main] com.hwt.spider.SpiderApplicationTests    : Starting SpiderApplicationTests on MSI with PID 16824 (started by hometown in E:\spiderProject)
+2020-10-19 17:45:33.736  INFO 16824 --- [main] com.hwt.spider.SpiderApplicationTests    : No active profile set, falling back to default profiles: default
+2020-10-19 17:45:34.926  INFO 16824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 17:45:34.929  INFO 16824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 17:45:34.972  INFO 16824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 0 Redis repository interfaces.
+2020-10-19 17:45:37.817  INFO 16824 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 17:45:38.607  INFO 16824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 17:45:38.636  INFO 16824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 17:45:38.674  INFO 16824 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 17:45:38.913  INFO 16824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 17:45:38.947  INFO 16824 --- [main] com.hwt.spider.SpiderApplicationTests    : Started SpiderApplicationTests in 5.733 seconds (JVM running for 7.01)

@@ -1,5 +1,6 @@
 package com.hwt.spider.controller;
 
+import com.hwt.spider.annotation.Login;
 import com.hwt.spider.entity.param.SpiderMusicParam;
 import com.hwt.spider.result.Result;
 import com.hwt.spider.entity.pojo.SpiderMusic;
@@ -22,14 +23,14 @@ import java.util.List;
 public class MusicController {
     @Resource
     private SpiderMusicService spiderMusicService;
-
+    @Login
     @RequestMapping(value = "/list",method = RequestMethod.POST)
     @ApiOperation(value = "音乐搜索",notes = "音乐搜索")
     public Result<List<SpiderMusic>> list(@RequestBody SpiderMusicParam spiderMusicParam){
         List<SpiderMusic> list = spiderMusicService.getList(spiderMusicParam.getKeyword());
         return ReturnResult.OK(list);
     }
-
+    @Login
     @RequestMapping(value = "/listPrecise",method = RequestMethod.POST)
     @ApiOperation(value = "音乐精确搜索",notes = "音乐精确搜索")
     public Result<List<SpiderMusic>> listPrecise(@RequestBody SpiderMusicParam spiderMusicParam){
