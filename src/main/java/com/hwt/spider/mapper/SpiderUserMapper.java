@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Param;
 
 public interface SpiderUserMapper {
 
-    SpiderUser getUserByAccoutNumber(Long accoutNumber);
+    SpiderUser getUserByMail(String accoutNumber);
 
     void insert(SpiderUser record);
 

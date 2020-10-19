@@ -35,15 +35,15 @@ public class SpiderLoginServiceImpl implements SpiderLoginService {
     private RedisTemplate<String, String> redisTemplate;
     @Override
     public String login(LoginParam loginParam) {
-        Long accoutNumber = loginParam.getAccoutNumber();
-        if (accoutNumber == null){
-            throw new BusinessException(ErrorCode.USER_ACCOUT_NUMBER_IS_EMPTY);
+        String mail = loginParam.getMail();
+        if (StringUtils.isEmpty(mail)){
+            throw new BusinessException(ErrorCode.USER_MAIL_IS_EMPTY);
         }
-        SpiderUser userByAccoutNumber = spiderUserMapper.getUserByAccoutNumber(accoutNumber);
+        SpiderUser userByAccoutNumber = spiderUserMapper.getUserByMail(mail);
         if (userByAccoutNumber == null){
             throw new BusinessException(ErrorCode.USER_IS_NOT_EXIST);
         }
-        String passWord = loginParam.getPassWord();
+        String passWord = loginParam.getPassword();
         if (passWord == null){
             throw new BusinessException(ErrorCode.USER_PASS_WORD_IS_EMPTY);
         }
@@ -66,19 +66,15 @@ public class SpiderLoginServiceImpl implements SpiderLoginService {
 
     @Override
     public void register(LoginParam loginParam){
-        Long accoutNum = loginParam.getAccoutNumber();
-        if (accoutNum == null){
-            throw new BusinessException(ErrorCode.USER_ACCOUT_NUMBER_IS_EMPTY);
-        }
         String mail = loginParam.getMail();
         if (StringUtils.isEmpty(mail)){
             throw new BusinessException(ErrorCode.USER_MAIL_IS_EMPTY);
         }
-        String userName = loginParam.getUserName();
+        String userName = loginParam.getUsername();
         if (StringUtils.isEmpty(userName)){
             throw new BusinessException(ErrorCode.USER_USER_NAME_IS_EMPTY);
         }
-        String password = loginParam.getPassWord();
+        String password = loginParam.getPassword();
         if (StringUtils.isEmpty(password)){
             throw new BusinessException(ErrorCode.USER_PASS_WORD_IS_EMPTY);
         }
@@ -86,13 +82,12 @@ public class SpiderLoginServiceImpl implements SpiderLoginService {
         if (StringUtils.isEmpty(code)){
             throw new BusinessException(ErrorCode.USER_VERFICATION_CODE_IS_EMPTY);
         }
-        String key = "verficationCode_"+accoutNum;
+        String key = "verficationCode_"+mail;
         String verficationCode = redisTemplate.boundValueOps(key).get();
         if (!verficationCode.equals(code)){
             throw new BusinessException(ErrorCode.USER_VERFICATION_CODE_IS_ERROR);
         }
         SpiderUser spiderUser = new SpiderUser();
-        spiderUser.setAccoutNumber(accoutNum);
         spiderUser.setUserName(userName);
         spiderUser.setMail(mail);
         spiderUser.setPassWord(password);
@@ -100,8 +95,4 @@ public class SpiderLoginServiceImpl implements SpiderLoginService {
         spiderUserMapper.insert(spiderUser);
     }
 
-    @Override
-    public String getAccoutNum() {
-        return Code.getAccoutNum();
-    }
 }

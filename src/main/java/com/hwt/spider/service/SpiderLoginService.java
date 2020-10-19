@@ -15,5 +15,4 @@ public interface SpiderLoginService {
 
     void register(LoginParam loginParam);
 
-    String getAccoutNum();
 }

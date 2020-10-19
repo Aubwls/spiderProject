@@ -9,11 +9,10 @@ import lombok.Data;
  */
 @Data
 public class LoginParam {
-    private Long accoutNumber;
 
-    private String userName;
+    private String username;
 
-    private String passWord;
+    private String password;
 
     private String mail;
 

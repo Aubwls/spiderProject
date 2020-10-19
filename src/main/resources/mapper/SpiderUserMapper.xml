@@ -3,14 +3,13 @@
 <mapper namespace="com.hwt.spider.mapper.SpiderUserMapper">
   <resultMap id="BaseResultMap" type="com.hwt.spider.entity.pojo.SpiderUser">
     <id column="ID" jdbcType="LONGVARCHAR" property="id" />
-    <result column="ACCOUT_NUMBER" jdbcType="LONGVARCHAR" property="accoutNumber" />
     <result column="MAIL" jdbcType="VARCHAR" property="mail" />
     <result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
     <result column="PASS_WORD" jdbcType="VARCHAR" property="passWord" />
     <result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
   </resultMap>
   <sql id="Base_Column_List">
-    ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME
+    ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
@@ -18,16 +17,16 @@
     from spider_user
     where ID = #{id,jdbcType=LONGVARCHAR}
   </select>
-  <select id="getUserByAccoutNumber" parameterType="java.lang.Long" resultMap="BaseResultMap">
+  <select id="getUserByMail" parameterType="java.lang.String" resultMap="BaseResultMap">
     select
     <include refid="Base_Column_List"/>
     from spider_user
-    where ACCOUT_NUMBER = #{accoutNumber,jdbcType=INTEGER}
+    where MAIL = #{mail,jdbcType=VARCHAR}
   </select>
   <insert id="insert" parameterType="com.hwt.spider.entity.pojo.SpiderUser">
-    insert into spider_user (ACCOUT_NUMBER, MAIL, USER_NAME,
+    insert into spider_user ( MAIL, USER_NAME,
       PASS_WORD, CREATE_TIME)
-    values (#{accoutNumber,jdbcType=INTEGER},#{mail,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR},
+    values (#{mail,jdbcType=VARCHAR}, #{userName,jdbcType=VARCHAR},
       #{passWord,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
   </insert>
 

@@ -28,20 +28,17 @@ public class LoginValidationServiceImpl implements LoginValidationService {
     @Override
     public void estimateLogin() {
         HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-        String userId = request.getParameter("userId");
-        if (StringUtils.isEmpty(userId)) {
+        String token = request.getParameter("token");
+        System.out.println(token);
+        if (StringUtils.isEmpty(token)) {
             log.error("账号未登录！");
             throw new BusinessException(401,"账号未登录！");
         }
-        Object token = redisTemplate.boundValueOps(RedisKey.getLoginTokenKey(userId)).get();
-        if (token == null) {
-            log.error("token不存在！用户为："+userId);
-            throw new BusinessException(401,"登录失效！");
-        }
+
         //获得用户信息
         Object userInfo = redisTemplate.boundValueOps(RedisKey.getLoginTokenValue(token.toString())).get();
         if (userInfo == null) {
-            log.error("用户信息不存在！用户为："+userId);
+            log.error("用户信息不存在！");
             throw new BusinessException(401,"登录失效！");
         }
     }

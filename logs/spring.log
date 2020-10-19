@@ -1,267 +1,436 @@
-2020-10-15 11:33:00.842  INFO 26600 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 26600 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
-2020-10-15 11:33:00.848  INFO 26600 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
-2020-10-15 11:33:02.464  INFO 26600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-15 11:33:02.467  INFO 26600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-10-15 11:33:02.515  INFO 26600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
-2020-10-15 11:33:03.470  INFO 26600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2020-10-15 11:33:03.482  INFO 26600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-15 11:33:03.482  INFO 26600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-15 11:33:03.631  INFO 26600 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
-2020-10-15 11:33:03.631  INFO 26600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2673 ms
-2020-10-15 11:33:05.183  INFO 26600 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-15 11:33:05.617  INFO 26600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
-2020-10-15 11:33:05.620  INFO 26600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-15 11:33:05.637  INFO 26600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-15 11:33:05.705  INFO 26600 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-15 11:33:05.849  INFO 26600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
-2020-10-15 11:33:05.873  INFO 26600 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 6.172 seconds (JVM running for 7.814)
-2020-10-15 11:33:18.874  INFO 26600 --- [http-nio-8081-exec-2] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-15 11:33:18.875  INFO 26600 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-15 11:33:18.889  INFO 26600 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
-2020-10-15 11:33:28.279 ERROR 26600 --- [http-nio-8081-exec-3] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
-2020-10-15 11:37:01.560  INFO 28356 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 28356 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
-2020-10-15 11:37:01.565  INFO 28356 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
-2020-10-15 11:37:02.941  INFO 28356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-15 11:37:02.943  INFO 28356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-10-15 11:37:02.985  INFO 28356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
-2020-10-15 11:37:03.766  INFO 28356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2020-10-15 11:37:03.776  INFO 28356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-15 11:37:03.777  INFO 28356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-15 11:37:03.911  INFO 28356 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
-2020-10-15 11:37:03.912  INFO 28356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2254 ms
-2020-10-15 11:37:05.444  INFO 28356 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-15 11:37:05.845  INFO 28356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
-2020-10-15 11:37:05.846  INFO 28356 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-15 11:37:05.866  INFO 28356 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-15 11:37:05.903  INFO 28356 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-15 11:37:06.074  INFO 28356 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
-2020-10-15 11:37:06.098  INFO 28356 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 5.38 seconds (JVM running for 6.812)
-2020-10-15 11:37:13.473  INFO 28356 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-15 11:37:13.473  INFO 28356 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-15 11:37:13.480  INFO 28356 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-10-15 11:37:14.043 ERROR 28356 --- [http-nio-8081-exec-1] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
-2020-10-15 11:39:01.930 ERROR 28356 --- [http-nio-8081-exec-5] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
-2020-10-15 11:39:51.267  INFO 600 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 600 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
-2020-10-15 11:39:51.274  INFO 600 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
-2020-10-15 11:39:52.803  INFO 600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-15 11:39:52.806  INFO 600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-10-15 11:39:52.849  INFO 600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
-2020-10-15 11:39:53.714  INFO 600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2020-10-15 11:39:53.724  INFO 600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-15 11:39:53.725  INFO 600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-15 11:39:53.852  INFO 600 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
-2020-10-15 11:39:53.852  INFO 600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2476 ms
-2020-10-15 11:39:55.171  INFO 600 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-15 11:39:55.563  INFO 600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
-2020-10-15 11:39:55.564  INFO 600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-15 11:39:55.580  INFO 600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-15 11:39:55.616  INFO 600 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-15 11:39:55.761  INFO 600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
-2020-10-15 11:39:55.788  INFO 600 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 5.318 seconds (JVM running for 6.615)
-2020-10-15 11:40:02.804  INFO 600 --- [http-nio-8081-exec-2] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-15 11:40:02.804  INFO 600 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-15 11:40:02.809  INFO 600 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2020-10-15 11:40:03.329 ERROR 600 --- [http-nio-8081-exec-2] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
-2020-10-15 11:41:36.091  INFO 5232 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 5232 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
-2020-10-15 11:41:36.095  INFO 5232 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
-2020-10-15 11:41:37.667  INFO 5232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-15 11:41:37.669  INFO 5232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-10-15 11:41:37.716  INFO 5232 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 0 Redis repository interfaces.
-2020-10-15 11:41:38.575  INFO 5232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2020-10-15 11:41:38.586  INFO 5232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-15 11:41:38.586  INFO 5232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-15 11:41:38.718  INFO 5232 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
-2020-10-15 11:41:38.718  INFO 5232 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2505 ms
-2020-10-15 11:41:40.288  INFO 5232 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-15 11:41:40.732  INFO 5232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
-2020-10-15 11:41:40.734  INFO 5232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-15 11:41:40.752  INFO 5232 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-15 11:41:40.801  INFO 5232 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-15 11:41:40.963  INFO 5232 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
-2020-10-15 11:41:40.993  INFO 5232 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 5.689 seconds (JVM running for 7.159)
-2020-10-15 11:41:48.366  INFO 5232 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-15 11:41:48.366  INFO 5232 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-15 11:41:48.374  INFO 5232 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-10-15 11:41:48.898 ERROR 5232 --- [http-nio-8081-exec-1] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
-2020-10-15 11:42:50.787  INFO 27808 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 27808 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
-2020-10-15 11:42:50.791  INFO 27808 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
-2020-10-15 11:42:52.385  INFO 27808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-15 11:42:52.388  INFO 27808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-10-15 11:42:52.434  INFO 27808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
-2020-10-15 11:42:53.252  INFO 27808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2020-10-15 11:42:53.262  INFO 27808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-15 11:42:53.262  INFO 27808 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-15 11:42:53.391  INFO 27808 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
-2020-10-15 11:42:53.391  INFO 27808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2469 ms
-2020-10-15 11:42:54.713  INFO 27808 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-15 11:42:55.092  INFO 27808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
-2020-10-15 11:42:55.093  INFO 27808 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-15 11:42:55.109  INFO 27808 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-15 11:42:55.153  INFO 27808 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-15 11:42:55.289  INFO 27808 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
-2020-10-15 11:42:55.312  INFO 27808 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 5.515 seconds (JVM running for 7.118)
-2020-10-15 11:43:01.772  INFO 27808 --- [http-nio-8081-exec-2] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-15 11:43:01.773  INFO 27808 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-15 11:43:01.781  INFO 27808 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-10-15 11:43:02.352 ERROR 27808 --- [http-nio-8081-exec-2] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
-2020-10-15 11:45:29.881  INFO 14896 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 14896 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
-2020-10-15 11:45:29.888  INFO 14896 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
-2020-10-15 11:45:31.353  INFO 14896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-15 11:45:31.356  INFO 14896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-10-15 11:45:31.400  INFO 14896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
-2020-10-15 11:45:32.236  INFO 14896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2020-10-15 11:45:32.250  INFO 14896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-15 11:45:32.250  INFO 14896 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-15 11:45:32.378  INFO 14896 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
-2020-10-15 11:45:32.379  INFO 14896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2398 ms
-2020-10-15 11:45:33.752  INFO 14896 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-15 11:45:34.148  INFO 14896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
-2020-10-15 11:45:34.149  INFO 14896 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-15 11:45:34.172  INFO 14896 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-15 11:45:34.208  INFO 14896 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-15 11:45:34.357  INFO 14896 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
-2020-10-15 11:45:34.382  INFO 14896 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 5.327 seconds (JVM running for 6.741)
-2020-10-15 11:45:45.818  INFO 14896 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-15 11:45:45.818  INFO 14896 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-15 11:45:45.826  INFO 14896 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-10-15 11:45:46.382 ERROR 14896 --- [http-nio-8081-exec-1] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
-2020-10-15 11:50:26.170  INFO 5364 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 5364 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
-2020-10-15 11:50:26.178  INFO 5364 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
-2020-10-15 11:50:27.601  INFO 5364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-15 11:50:27.603  INFO 5364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-10-15 11:50:27.648  INFO 5364 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
-2020-10-15 11:50:28.732  INFO 5364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2020-10-15 11:50:28.747  INFO 5364 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-15 11:50:28.747  INFO 5364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-15 11:50:28.903  INFO 5364 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
-2020-10-15 11:50:28.904  INFO 5364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2627 ms
-2020-10-15 11:50:30.528  INFO 5364 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-15 11:50:30.944  INFO 5364 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
-2020-10-15 11:50:30.945  INFO 5364 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-15 11:50:30.965  INFO 5364 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-15 11:50:31.002  INFO 5364 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-15 11:50:31.155  INFO 5364 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
-2020-10-15 11:50:31.183  INFO 5364 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 6.037 seconds (JVM running for 7.674)
-2020-10-15 11:50:50.953  INFO 5364 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-15 11:50:50.953  INFO 5364 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-15 11:50:50.961  INFO 5364 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-10-15 11:50:51.807  INFO 5364 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-10-15 11:50:52.153  INFO 5364 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-10-15 11:50:52.173 DEBUG 5364 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByParam                  : ==>  Preparing: select FICTION_NAME, AUTHOR, URL from spider_fiction
-2020-10-15 11:50:52.209 DEBUG 5364 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByParam                  : ==> Parameters: 
-2020-10-15 11:50:52.250 DEBUG 5364 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByParam                  : <==      Total: 14
-2020-10-15 13:37:45.354  INFO 5364 --- [lettuce-nioEventLoop-4-1] io.lettuce.core.protocol.CommandHandler  : null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-
-java.io.IOException: 远程主机强迫关闭了一个现有的连接。
-	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_74]
-	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_74]
-	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_74]
-	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_74]
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_74]
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253) ~[netty-buffer-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133) ~[netty-buffer-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714) [netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) [netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) [netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) [netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) [netty-common-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) [netty-common-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-common-4.1.52.Final.jar:4.1.52.Final]
-	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_74]
-
-2020-10-15 13:37:45.462  INFO 5364 --- [lettuce-eventExecutorLoop-1-5] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /47.100.164.178:6379
-2020-10-15 13:37:45.751  WARN 5364 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [47.100.164.178:6379]: No route to host: no further information: /47.100.164.178:6379
-
-io.netty.channel.AbstractChannel$AnnotatedNoRouteToHostException: No route to host: no further information: /47.100.164.178:6379
-Caused by: java.net.NoRouteToHostException: No route to host: no further information
-	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method) ~[na:1.8.0_74]
-	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717) ~[na:1.8.0_74]
-	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:330) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:702) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493) ~[netty-transport-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-common-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.52.Final.jar:4.1.52.Final]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.52.Final.jar:4.1.52.Final]
-	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_74]
-
-2020-10-15 13:37:45.995  INFO 5364 --- [lettuce-nioEventLoop-4-5] i.l.core.protocol.ReconnectionHandler    : Reconnected to 47.100.164.178:6379
-2020-10-15 13:37:53.403  WARN 5364 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m899ms311µs700ns).
-2020-10-15 14:02:22.409 DEBUG 5364 --- [http-nio-8081-exec-5] c.h.s.m.S.getUserByAccoutNumber          : ==>  Preparing: select ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ACCOUT_NUMBER = ?
-2020-10-15 14:02:22.411 DEBUG 5364 --- [http-nio-8081-exec-5] c.h.s.m.S.getUserByAccoutNumber          : ==> Parameters: 1415128257(Long)
-2020-10-15 14:02:22.428 DEBUG 5364 --- [http-nio-8081-exec-5] c.h.s.m.S.getUserByAccoutNumber          : <==      Total: 1
-2020-10-15 14:02:44.147  INFO 22120 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 22120 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
-2020-10-15 14:02:44.151  INFO 22120 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
-2020-10-15 14:02:44.996  INFO 22120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-15 14:02:44.998  INFO 22120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-10-15 14:02:45.025  INFO 22120 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
-2020-10-15 14:02:45.559  INFO 22120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2020-10-15 14:02:45.566  INFO 22120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-15 14:02:45.567  INFO 22120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-15 14:02:45.658  INFO 22120 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
-2020-10-15 14:02:45.658  INFO 22120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1439 ms
-2020-10-15 14:02:46.639  INFO 22120 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-15 14:02:46.921  INFO 22120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
-2020-10-15 14:02:46.922  INFO 22120 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-15 14:02:46.933  INFO 22120 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-15 14:02:46.954  INFO 22120 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-15 14:02:47.053  INFO 22120 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
-2020-10-15 14:02:47.077  INFO 22120 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 3.384 seconds (JVM running for 4.108)
-2020-10-15 14:13:00.570  INFO 21768 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 21768 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
-2020-10-15 14:13:00.572  INFO 21768 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
-2020-10-15 14:13:01.289  INFO 21768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-15 14:13:01.291  INFO 21768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-10-15 14:13:01.315  INFO 21768 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
-2020-10-15 14:13:01.802  INFO 21768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2020-10-15 14:13:01.810  INFO 21768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-15 14:13:01.810  INFO 21768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-15 14:13:01.910  INFO 21768 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
-2020-10-15 14:13:01.911  INFO 21768 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1286 ms
-2020-10-15 14:13:03.115  INFO 21768 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-15 14:13:03.446  INFO 21768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
-2020-10-15 14:13:03.448  INFO 21768 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-15 14:13:03.462  INFO 21768 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-15 14:13:03.491  INFO 21768 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-15 14:13:03.608  INFO 21768 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
-2020-10-15 14:13:03.630  INFO 21768 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 3.468 seconds (JVM running for 4.155)
-2020-10-15 14:13:26.903  INFO 21768 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-15 14:13:26.904  INFO 21768 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-15 14:13:26.911  INFO 21768 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-10-15 14:13:26.987  INFO 21768 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-10-15 14:13:27.248  INFO 21768 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-10-15 14:13:27.254 DEBUG 21768 --- [http-nio-8081-exec-1] c.h.s.m.S.getUserByAccoutNumber          : ==>  Preparing: select ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ACCOUT_NUMBER = ?
-2020-10-15 14:13:27.275 DEBUG 21768 --- [http-nio-8081-exec-1] c.h.s.m.S.getUserByAccoutNumber          : ==> Parameters: 1415128257(Long)
-2020-10-15 14:13:27.308 DEBUG 21768 --- [http-nio-8081-exec-1] c.h.s.m.S.getUserByAccoutNumber          : <==      Total: 1
-2020-10-15 14:13:27.313 DEBUG 21768 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
-2020-10-15 14:16:24.600  INFO 13016 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on hsbjb0129 with PID 13016 (D:\myProject\spiderProject\target\classes started by Administrator in D:\myProject\spiderProject)
-2020-10-15 14:16:24.604  INFO 13016 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
-2020-10-15 14:16:25.748  INFO 13016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-15 14:16:25.750  INFO 13016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2020-10-15 14:16:25.786  INFO 13016 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
-2020-10-15 14:16:26.463  INFO 13016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2020-10-15 14:16:26.473  INFO 13016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-15 14:16:26.474  INFO 13016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-15 14:16:26.582  INFO 13016 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
-2020-10-15 14:16:26.582  INFO 13016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1905 ms
-2020-10-15 14:16:27.773  INFO 13016 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2020-10-15 14:16:28.097  INFO 13016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
-2020-10-15 14:16:28.099  INFO 13016 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2020-10-15 14:16:28.112  INFO 13016 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2020-10-15 14:16:28.139  INFO 13016 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2020-10-15 14:16:28.258  INFO 13016 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
-2020-10-15 14:16:28.279  INFO 13016 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 4.096 seconds (JVM running for 4.813)
-2020-10-15 14:16:46.164  INFO 13016 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-15 14:16:46.164  INFO 13016 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-15 14:16:46.172  INFO 13016 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-10-15 14:16:46.246  INFO 13016 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-10-15 14:16:46.489  INFO 13016 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-10-15 14:16:46.495 DEBUG 13016 --- [http-nio-8081-exec-1] c.h.s.m.S.getUserByAccoutNumber          : ==>  Preparing: select ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ACCOUT_NUMBER = ?
-2020-10-15 14:16:46.515 DEBUG 13016 --- [http-nio-8081-exec-1] c.h.s.m.S.getUserByAccoutNumber          : ==> Parameters: 1415128257(Long)
-2020-10-15 14:16:46.545 DEBUG 13016 --- [http-nio-8081-exec-1] c.h.s.m.S.getUserByAccoutNumber          : <==      Total: 1
-2020-10-15 14:16:46.549 DEBUG 13016 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
-2020-10-15 14:16:46.550 DEBUG 13016 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
-2020-10-15 14:16:46.563 DEBUG 13016 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 14:48:33.345  INFO 5208 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on MSI with PID 5208 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-10-19 14:48:33.365  INFO 5208 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
+2020-10-19 14:48:34.581  INFO 5208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 14:48:34.584  INFO 5208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 14:48:34.639  INFO 5208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 Redis repository interfaces.
+2020-10-19 14:48:35.489  INFO 5208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-19 14:48:35.514  INFO 5208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 14:48:35.515  INFO 5208 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 14:48:35.607  INFO 5208 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
+2020-10-19 14:48:35.607  INFO 5208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2188 ms
+2020-10-19 14:48:36.990  INFO 5208 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 14:48:37.359  INFO 5208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-19 14:48:37.359  INFO 5208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 14:48:37.398  INFO 5208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 14:48:37.424  INFO 5208 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 14:48:37.560  INFO 5208 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 14:48:37.585  INFO 5208 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 4.986 seconds (JVM running for 6.187)
+2020-10-19 15:00:12.771  INFO 11796 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on MSI with PID 11796 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-10-19 15:00:12.776  INFO 11796 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
+2020-10-19 15:00:13.639  INFO 11796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 15:00:13.641  INFO 11796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 15:00:13.669  INFO 11796 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-10-19 15:00:14.248  INFO 11796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-19 15:00:14.258  INFO 11796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 15:00:14.258  INFO 11796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 15:00:14.348  INFO 11796 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
+2020-10-19 15:00:14.349  INFO 11796 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1512 ms
+2020-10-19 15:00:15.460  INFO 11796 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 15:00:15.772  INFO 11796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-19 15:00:15.773  INFO 11796 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 15:00:15.787  INFO 11796 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 15:00:15.813  INFO 11796 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 15:00:15.926  INFO 11796 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 15:00:15.945  INFO 11796 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 3.705 seconds (JVM running for 4.625)
+2020-10-19 15:00:49.843  INFO 11796 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-19 15:00:49.843  INFO 11796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-19 15:00:49.850  INFO 11796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-10-19 15:07:22.476  INFO 11796 --- [http-nio-8081-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-19 15:07:24.940  INFO 11796 --- [http-nio-8081-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-19 15:07:24.948 DEBUG 11796 --- [http-nio-8081-exec-5] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, ACCOUT_NUMBER, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:07:24.980 DEBUG 11796 --- [http-nio-8081-exec-5] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:08:18.081  INFO 1168 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on MSI with PID 1168 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-10-19 15:08:18.086  INFO 1168 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
+2020-10-19 15:08:19.629  INFO 1168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 15:08:19.634  INFO 1168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 15:08:19.672  INFO 1168 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-10-19 15:08:20.588  INFO 1168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-19 15:08:20.602  INFO 1168 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 15:08:20.602  INFO 1168 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 15:08:20.724  INFO 1168 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
+2020-10-19 15:08:20.724  INFO 1168 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2552 ms
+2020-10-19 15:08:22.132  INFO 1168 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 15:08:22.697  INFO 1168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-19 15:08:22.699  INFO 1168 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 15:08:22.715  INFO 1168 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 15:08:22.750  INFO 1168 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 15:08:22.942  INFO 1168 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 15:08:22.970  INFO 1168 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 5.647 seconds (JVM running for 6.795)
+2020-10-19 15:08:42.300  INFO 1168 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-19 15:08:42.301  INFO 1168 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-19 15:08:42.313  INFO 1168 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-10-19 15:08:42.414  INFO 1168 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-19 15:08:42.704  INFO 1168 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-19 15:08:42.712 DEBUG 1168 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:08:42.738 DEBUG 1168 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:08:42.789 DEBUG 1168 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 0
+2020-10-19 15:08:42.797 ERROR 1168 --- [http-nio-8081-exec-1] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:14:00.858  WARN 1168 --- [http-nio-8081-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@64ac9117 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:14:05.861  WARN 1168 --- [http-nio-8081-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@d587e98 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:14:10.863  WARN 1168 --- [http-nio-8081-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ada5114 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:14:15.865  WARN 1168 --- [http-nio-8081-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4b6135e9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:14:20.867  WARN 1168 --- [http-nio-8081-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2563ca82 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:14:25.869  WARN 1168 --- [http-nio-8081-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@319d9fdc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:14:40.350  WARN 1168 --- [http-nio-8081-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@15855f8b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:14:45.353  WARN 1168 --- [http-nio-8081-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1f7d34fb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:14:50.355  WARN 1168 --- [http-nio-8081-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@65b9ccb3 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:14:55.358  WARN 1168 --- [http-nio-8081-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1d43c8de (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:14:55.378 DEBUG 1168 --- [http-nio-8081-exec-4] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:14:55.378 DEBUG 1168 --- [http-nio-8081-exec-4] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:14:55.393 DEBUG 1168 --- [http-nio-8081-exec-4] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:14:55.395 DEBUG 1168 --- [http-nio-8081-exec-4] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:14:55.395 DEBUG 1168 --- [http-nio-8081-exec-4] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:14:55.407 DEBUG 1168 --- [http-nio-8081-exec-4] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:28:58.279 ERROR 1168 --- [http-nio-8081-exec-7] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:29:01.108 ERROR 1168 --- [http-nio-8081-exec-9] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:30:01.828  WARN 1168 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@16bbf67b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:30:06.830  WARN 1168 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7b3da064 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:30:10.633  WARN 1168 --- [http-nio-8081-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@79e84d7d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:30:10.935  WARN 1168 --- [http-nio-8081-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9678c09 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:30:11.117  WARN 1168 --- [http-nio-8081-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@377dfa4a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:30:11.131 DEBUG 1168 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:30:11.132 DEBUG 1168 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:30:11.147 DEBUG 1168 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:30:11.148 ERROR 1168 --- [http-nio-8081-exec-7] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:30:11.173 DEBUG 1168 --- [http-nio-8081-exec-8] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:30:11.175 DEBUG 1168 --- [http-nio-8081-exec-8] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:30:11.190 DEBUG 1168 --- [http-nio-8081-exec-10] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:30:11.190 DEBUG 1168 --- [http-nio-8081-exec-10] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:30:11.193 DEBUG 1168 --- [http-nio-8081-exec-8] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:30:11.194 DEBUG 1168 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:30:11.194 ERROR 1168 --- [http-nio-8081-exec-8] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:30:11.194 DEBUG 1168 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:30:11.200 DEBUG 1168 --- [http-nio-8081-exec-10] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:30:11.201 ERROR 1168 --- [http-nio-8081-exec-10] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:30:11.210 DEBUG 1168 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:30:11.210 ERROR 1168 --- [http-nio-8081-exec-7] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:30:11.285  WARN 1168 --- [http-nio-8081-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@36ba56d5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:30:11.286 DEBUG 1168 --- [http-nio-8081-exec-9] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:30:11.286 DEBUG 1168 --- [http-nio-8081-exec-9] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:30:11.301 DEBUG 1168 --- [http-nio-8081-exec-9] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:30:11.302 ERROR 1168 --- [http-nio-8081-exec-9] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:30:11.832  WARN 1168 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2588f0f2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:30:11.846 DEBUG 1168 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:30:11.846 DEBUG 1168 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:30:11.862 DEBUG 1168 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:30:11.862 ERROR 1168 --- [http-nio-8081-exec-1] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:30:12.134  WARN 1168 --- [http-nio-8081-exec-3] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9cc24d0 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:30:12.134 DEBUG 1168 --- [http-nio-8081-exec-3] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:30:12.135 DEBUG 1168 --- [http-nio-8081-exec-3] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:30:12.150 DEBUG 1168 --- [http-nio-8081-exec-3] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:30:12.151 ERROR 1168 --- [http-nio-8081-exec-3] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:30:15.636  WARN 1168 --- [http-nio-8081-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@78fbf522 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:30:15.653 DEBUG 1168 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:30:15.653 DEBUG 1168 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:30:15.670 DEBUG 1168 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:30:15.671 ERROR 1168 --- [http-nio-8081-exec-2] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:30:15.940  WARN 1168 --- [http-nio-8081-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7a07355 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:30:15.940 DEBUG 1168 --- [http-nio-8081-exec-5] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:30:15.941 DEBUG 1168 --- [http-nio-8081-exec-5] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:30:15.956 DEBUG 1168 --- [http-nio-8081-exec-5] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:30:15.957 ERROR 1168 --- [http-nio-8081-exec-5] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:30:51.968 DEBUG 1168 --- [http-nio-8081-exec-6] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:30:51.968 DEBUG 1168 --- [http-nio-8081-exec-6] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:30:51.983 DEBUG 1168 --- [http-nio-8081-exec-6] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:30:51.984 ERROR 1168 --- [http-nio-8081-exec-6] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:31:00.251 DEBUG 1168 --- [http-nio-8081-exec-10] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:31:00.252 DEBUG 1168 --- [http-nio-8081-exec-10] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:31:00.263 DEBUG 1168 --- [http-nio-8081-exec-10] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:31:00.264 ERROR 1168 --- [http-nio-8081-exec-10] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:31:05.662 DEBUG 1168 --- [http-nio-8081-exec-9] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:31:05.663 DEBUG 1168 --- [http-nio-8081-exec-9] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:31:05.678 DEBUG 1168 --- [http-nio-8081-exec-9] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:31:05.678 ERROR 1168 --- [http-nio-8081-exec-9] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:31:20.855 DEBUG 1168 --- [http-nio-8081-exec-5] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:31:20.856 DEBUG 1168 --- [http-nio-8081-exec-5] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:31:20.871 DEBUG 1168 --- [http-nio-8081-exec-5] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:31:20.873 ERROR 1168 --- [http-nio-8081-exec-5] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:31:46.848 DEBUG 1168 --- [http-nio-8081-exec-6] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:31:46.849 DEBUG 1168 --- [http-nio-8081-exec-6] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:31:46.865 DEBUG 1168 --- [http-nio-8081-exec-6] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:31:46.866 ERROR 1168 --- [http-nio-8081-exec-6] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/login/login
+2020-10-19 15:33:21.339  INFO 16688 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on MSI with PID 16688 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-10-19 15:33:21.342  INFO 16688 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
+2020-10-19 15:33:22.331  INFO 16688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 15:33:22.335  INFO 16688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 15:33:22.363  INFO 16688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-10-19 15:33:23.014  INFO 16688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-19 15:33:23.025  INFO 16688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 15:33:23.025  INFO 16688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 15:33:23.130  INFO 16688 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
+2020-10-19 15:33:23.131  INFO 16688 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1732 ms
+2020-10-19 15:33:24.341  INFO 16688 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 15:33:24.682  INFO 16688 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-19 15:33:24.683  INFO 16688 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 15:33:24.701  INFO 16688 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 15:33:24.730  INFO 16688 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 15:33:24.860  INFO 16688 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 15:33:24.883  INFO 16688 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 4.149 seconds (JVM running for 5.061)
+2020-10-19 15:33:33.946  INFO 16688 --- [http-nio-8081-exec-2] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-19 15:33:33.946  INFO 16688 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-19 15:33:33.954  INFO 16688 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-10-19 15:33:34.069  INFO 16688 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-19 15:33:34.370  INFO 16688 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-19 15:33:34.380 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:33:34.403 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:33:34.440 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:33:34.448 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:33:34.448 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:33:34.465 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:38:05.828  WARN 16688 --- [http-nio-8081-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5f5ffc90 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:38:10.831  WARN 16688 --- [http-nio-8081-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6527a1cf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:38:15.834  WARN 16688 --- [http-nio-8081-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@ba7437d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:38:20.836  WARN 16688 --- [http-nio-8081-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4c89152f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:38:25.838  WARN 16688 --- [http-nio-8081-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ac7367b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:38:30.839  WARN 16688 --- [http-nio-8081-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5b4a2cf5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:39:04.773  WARN 16688 --- [http-nio-8081-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4c4f4702 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:39:04.786 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:39:04.786 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:39:04.797 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:39:04.798 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:39:04.798 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:39:04.810 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:39:05.121 DEBUG 16688 --- [http-nio-8081-exec-5] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:39:05.121 DEBUG 16688 --- [http-nio-8081-exec-5] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:39:05.136 DEBUG 16688 --- [http-nio-8081-exec-5] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:39:05.137 DEBUG 16688 --- [http-nio-8081-exec-5] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:39:05.137 DEBUG 16688 --- [http-nio-8081-exec-5] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:39:05.148 DEBUG 16688 --- [http-nio-8081-exec-5] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:39:05.635 DEBUG 16688 --- [http-nio-8081-exec-8] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:39:05.635 DEBUG 16688 --- [http-nio-8081-exec-8] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:39:05.647 DEBUG 16688 --- [http-nio-8081-exec-8] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:39:05.647 DEBUG 16688 --- [http-nio-8081-exec-8] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:39:05.647 DEBUG 16688 --- [http-nio-8081-exec-8] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:39:05.660 DEBUG 16688 --- [http-nio-8081-exec-8] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:39:07.254  WARN 16688 --- [http-nio-8081-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@37095192 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:39:07.264 DEBUG 16688 --- [http-nio-8081-exec-9] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:39:07.264 DEBUG 16688 --- [http-nio-8081-exec-9] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:39:07.276 DEBUG 16688 --- [http-nio-8081-exec-9] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:39:07.277 DEBUG 16688 --- [http-nio-8081-exec-9] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:39:07.277 DEBUG 16688 --- [http-nio-8081-exec-9] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:39:07.288 DEBUG 16688 --- [http-nio-8081-exec-9] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:39:08.944  WARN 16688 --- [http-nio-8081-exec-2] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1c64eaf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:39:08.954 DEBUG 16688 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:39:08.954 DEBUG 16688 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:39:08.965 DEBUG 16688 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:39:08.965 DEBUG 16688 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:39:08.965 DEBUG 16688 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:39:08.976 DEBUG 16688 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:39:09.459  WARN 16688 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@387dafaa (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:39:09.459 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:39:09.460 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:39:09.572 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:39:09.572 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:39:09.573 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:39:09.583 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:39:26.404 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:39:26.404 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:39:26.405 DEBUG 16688 --- [http-nio-8081-exec-4] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:39:26.406 DEBUG 16688 --- [http-nio-8081-exec-4] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:39:26.416 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:39:26.416 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:39:26.416 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:39:26.418 DEBUG 16688 --- [http-nio-8081-exec-4] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:39:26.420 DEBUG 16688 --- [http-nio-8081-exec-4] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:39:26.420 DEBUG 16688 --- [http-nio-8081-exec-4] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:39:26.427 DEBUG 16688 --- [http-nio-8081-exec-3] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:39:26.431 DEBUG 16688 --- [http-nio-8081-exec-4] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:39:26.483  INFO 16688 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /47.100.164.178:6379
+2020-10-19 15:39:26.548  INFO 16688 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ReconnectionHandler    : Reconnected to 47.100.164.178:6379
+2020-10-19 15:40:08.575 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:40:08.575 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:40:08.587 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:40:08.587 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:40:08.587 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:40:08.599 DEBUG 16688 --- [http-nio-8081-exec-7] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:40:16.340 ERROR 16688 --- [http-nio-8081-exec-5] c.h.s.s.impl.LoginValidationServiceImpl  : 账号未登录！
+2020-10-19 15:40:16.340 ERROR 16688 --- [http-nio-8081-exec-5] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
+2020-10-19 15:44:23.412  WARN 16688 --- [http-nio-8081-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7d627423 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:44:28.414  WARN 16688 --- [http-nio-8081-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2212bfaf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:44:33.416  WARN 16688 --- [http-nio-8081-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1305fea7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:44:38.417  WARN 16688 --- [http-nio-8081-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2ce147a1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:44:43.419  WARN 16688 --- [http-nio-8081-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@13842ec6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:44:45.885  WARN 16688 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@463a4b2a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:44:48.420  WARN 16688 --- [http-nio-8081-exec-4] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2fc81ad7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:44:50.889  WARN 16688 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5a05f423 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:44:55.890  WARN 16688 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@17a8a3a1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:45:00.892  WARN 16688 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@20a7fcfa (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 15:45:00.902 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 15:45:00.902 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 15:45:00.912 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 15:45:00.913 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 15:45:00.913 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 15:45:00.923 DEBUG 16688 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 15:45:20.082  INFO 16688 --- [lettuce-eventExecutorLoop-1-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /47.100.164.178:6379
+2020-10-19 15:45:20.113  INFO 16688 --- [lettuce-nioEventLoop-4-3] i.l.core.protocol.ReconnectionHandler    : Reconnected to 47.100.164.178:6379
+2020-10-19 15:46:01.946  INFO 14528 --- [main] com.hwt.spider.SpiderApplicationTests    : Starting SpiderApplicationTests on MSI with PID 14528 (started by hometown in E:\spiderProject)
+2020-10-19 15:46:01.949  INFO 14528 --- [main] com.hwt.spider.SpiderApplicationTests    : No active profile set, falling back to default profiles: default
+2020-10-19 15:46:03.330  INFO 14528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 15:46:03.337  INFO 14528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 15:46:03.377  INFO 14528 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 Redis repository interfaces.
+2020-10-19 15:46:07.826  INFO 14528 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 15:46:08.998  INFO 14528 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 15:46:09.058  INFO 14528 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 15:46:09.112  INFO 14528 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 15:46:09.348  INFO 14528 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 15:46:09.393  INFO 14528 --- [main] com.hwt.spider.SpiderApplicationTests    : Started SpiderApplicationTests in 8.097 seconds (JVM running for 9.982)
+2020-10-19 16:02:26.454  INFO 11624 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on MSI with PID 11624 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-10-19 16:02:26.459  INFO 11624 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
+2020-10-19 16:02:27.323  INFO 11624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 16:02:27.325  INFO 11624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 16:02:27.353  INFO 11624 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-10-19 16:02:27.940  INFO 11624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-19 16:02:27.948  INFO 11624 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 16:02:27.949  INFO 11624 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 16:02:28.035  INFO 11624 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
+2020-10-19 16:02:28.035  INFO 11624 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1534 ms
+2020-10-19 16:02:29.120  INFO 11624 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 16:02:29.429  INFO 11624 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-19 16:02:29.429  INFO 11624 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 16:02:29.444  INFO 11624 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 16:02:29.470  INFO 11624 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 16:02:29.585  INFO 11624 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 16:02:29.604  INFO 11624 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 3.586 seconds (JVM running for 4.353)
+2020-10-19 16:02:43.313  INFO 17600 --- [main] com.hwt.spider.SpiderApplicationTests    : Starting SpiderApplicationTests on MSI with PID 17600 (started by hometown in E:\spiderProject)
+2020-10-19 16:02:43.315  INFO 17600 --- [main] com.hwt.spider.SpiderApplicationTests    : No active profile set, falling back to default profiles: default
+2020-10-19 16:02:44.237  INFO 17600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 16:02:44.242  INFO 17600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 16:02:44.279  INFO 17600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2020-10-19 16:02:46.882  INFO 17600 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 16:02:47.796  INFO 17600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 16:02:47.823  INFO 17600 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 16:02:47.856  INFO 17600 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 16:02:48.025  INFO 17600 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 16:02:48.054  INFO 17600 --- [main] com.hwt.spider.SpiderApplicationTests    : Started SpiderApplicationTests in 5.177 seconds (JVM running for 6.275)
+2020-10-19 16:08:39.488  INFO 16172 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on MSI with PID 16172 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-10-19 16:08:39.505  INFO 16172 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
+2020-10-19 16:08:40.317  INFO 16172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 16:08:40.320  INFO 16172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 16:08:40.348  INFO 16172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-10-19 16:08:40.956  INFO 16172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-19 16:08:40.964  INFO 16172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 16:08:40.964  INFO 16172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 16:08:41.058  INFO 16172 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
+2020-10-19 16:08:41.058  INFO 16172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1509 ms
+2020-10-19 16:08:42.120  INFO 16172 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 16:08:42.430  INFO 16172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-19 16:08:42.431  INFO 16172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 16:08:42.444  INFO 16172 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 16:08:42.475  INFO 16172 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 16:08:42.596  INFO 16172 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 16:08:42.618  INFO 16172 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 3.568 seconds (JVM running for 4.349)
+2020-10-19 16:09:08.357  INFO 16172 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-19 16:09:08.357  INFO 16172 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-19 16:09:08.366  INFO 16172 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-10-19 16:09:08.485  INFO 16172 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-19 16:09:08.776  INFO 16172 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-19 16:09:08.784 DEBUG 16172 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 16:09:08.815 DEBUG 16172 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 16:09:08.851 DEBUG 16172 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 16:09:08.861 DEBUG 16172 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 16:09:08.862 DEBUG 16172 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 16:09:08.878 DEBUG 16172 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 16:11:29.946  INFO 9520 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on MSI with PID 9520 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-10-19 16:11:29.949  INFO 9520 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
+2020-10-19 16:11:30.766  INFO 9520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 16:11:30.768  INFO 9520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 16:11:30.797  INFO 9520 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-10-19 16:11:31.379  INFO 9520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-19 16:11:31.389  INFO 9520 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 16:11:31.389  INFO 9520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 16:11:31.475  INFO 9520 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
+2020-10-19 16:11:31.475  INFO 9520 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1482 ms
+2020-10-19 16:11:32.577  INFO 9520 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 16:11:32.902  INFO 9520 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-19 16:11:32.903  INFO 9520 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 16:11:32.918  INFO 9520 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 16:11:32.944  INFO 9520 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 16:11:33.058  INFO 9520 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 16:11:33.078  INFO 9520 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 3.598 seconds (JVM running for 4.363)
+2020-10-19 16:11:50.563  INFO 9520 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-19 16:11:50.563  INFO 9520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-19 16:11:50.574  INFO 9520 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-10-19 16:11:50.725  INFO 9520 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-19 16:11:51.041  INFO 9520 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-19 16:11:51.048 DEBUG 9520 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 16:11:51.073 DEBUG 9520 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 16:11:51.108 DEBUG 9520 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 16:11:51.114 DEBUG 9520 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 16:11:51.114 DEBUG 9520 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 16:11:51.130 DEBUG 9520 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 16:16:21.598 ERROR 9520 --- [http-nio-8081-exec-1] c.h.s.s.impl.LoginValidationServiceImpl  : 账号未登录！
+2020-10-19 16:16:21.599 ERROR 9520 --- [http-nio-8081-exec-1] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
+2020-10-19 16:16:33.549 ERROR 9520 --- [http-nio-8081-exec-3] c.h.s.s.impl.LoginValidationServiceImpl  : 账号未登录！
+2020-10-19 16:16:33.549 ERROR 9520 --- [http-nio-8081-exec-3] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
+2020-10-19 16:17:02.353 ERROR 9520 --- [http-nio-8081-exec-6] c.h.s.s.impl.LoginValidationServiceImpl  : 账号未登录！
+2020-10-19 16:17:02.353 ERROR 9520 --- [http-nio-8081-exec-6] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
+2020-10-19 16:17:20.535  INFO 12420 --- [main] com.hwt.spider.SpiderApplication         : Starting SpiderApplication on MSI with PID 12420 (E:\spiderProject\target\classes started by hometown in E:\spiderProject)
+2020-10-19 16:17:20.538  INFO 12420 --- [main] com.hwt.spider.SpiderApplication         : No active profile set, falling back to default profiles: default
+2020-10-19 16:17:21.395  INFO 12420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-19 16:17:21.397  INFO 12420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-19 16:17:21.427  INFO 12420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-10-19 16:17:22.061  INFO 12420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-10-19 16:17:22.070  INFO 12420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 16:17:22.071  INFO 12420 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-19 16:17:22.172  INFO 12420 --- [main] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring embedded WebApplicationContext
+2020-10-19 16:17:22.173  INFO 12420 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1590 ms
+2020-10-19 16:17:23.291  INFO 12420 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-19 16:17:23.598  INFO 12420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/api/spider'
+2020-10-19 16:17:23.598  INFO 12420 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-19 16:17:23.613  INFO 12420 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-19 16:17:23.644  INFO 12420 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-19 16:17:23.769  INFO 12420 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: listUsingPOST_1
+2020-10-19 16:17:23.792  INFO 12420 --- [main] com.hwt.spider.SpiderApplication         : Started SpiderApplication in 3.684 seconds (JVM running for 4.463)
+2020-10-19 16:17:39.671  INFO 12420 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[localhost].[/api/spider]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-19 16:17:39.671  INFO 12420 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-19 16:17:39.683  INFO 12420 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-10-19 16:17:39.809  INFO 12420 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-19 16:17:40.055  INFO 12420 --- [http-nio-8081-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-19 16:17:40.063 DEBUG 12420 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 16:17:40.088 DEBUG 12420 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 16:17:40.118 DEBUG 12420 --- [http-nio-8081-exec-2] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 16:17:40.122 DEBUG 12420 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 16:17:40.123 DEBUG 12420 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 16:17:40.134 DEBUG 12420 --- [http-nio-8081-exec-2] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 16:17:46.071 ERROR 12420 --- [http-nio-8081-exec-4] c.h.s.s.impl.LoginValidationServiceImpl  : 账号未登录！
+2020-10-19 16:17:46.075 ERROR 12420 --- [http-nio-8081-exec-4] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
+2020-10-19 16:18:13.040 DEBUG 12420 --- [http-nio-8081-exec-6] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 16:18:13.041 DEBUG 12420 --- [http-nio-8081-exec-6] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 16:18:13.052 DEBUG 12420 --- [http-nio-8081-exec-6] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 16:18:13.053 DEBUG 12420 --- [http-nio-8081-exec-6] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 16:18:13.053 DEBUG 12420 --- [http-nio-8081-exec-6] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 16:18:13.064 DEBUG 12420 --- [http-nio-8081-exec-6] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 16:18:20.592 ERROR 12420 --- [http-nio-8081-exec-8] c.h.s.s.impl.LoginValidationServiceImpl  : 账号未登录！
+2020-10-19 16:18:20.592 ERROR 12420 --- [http-nio-8081-exec-8] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
+2020-10-19 16:19:37.879 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 16:19:37.879 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 16:19:37.891 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 16:19:37.891 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 16:19:37.892 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 16:19:37.907 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 16:19:44.820 ERROR 12420 --- [http-nio-8081-exec-3] c.h.s.s.impl.LoginValidationServiceImpl  : 账号未登录！
+2020-10-19 16:19:44.822 ERROR 12420 --- [http-nio-8081-exec-3] c.h.s.exception.GlobalExceptionHandler   : 发生错误null,来源http://localhost:8081/api/spider/fiction/list
+2020-10-19 16:26:04.560  WARN 12420 --- [http-nio-8081-exec-6] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@d587e98 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:26:09.563  WARN 12420 --- [http-nio-8081-exec-6] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@583377f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:26:14.565  WARN 12420 --- [http-nio-8081-exec-6] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4b6135e9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:26:19.568  WARN 12420 --- [http-nio-8081-exec-6] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2563ca82 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:26:24.570  WARN 12420 --- [http-nio-8081-exec-6] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@319d9fdc (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:26:29.574  WARN 12420 --- [http-nio-8081-exec-6] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@489dd951 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:30:11.394  WARN 12420 --- [http-nio-8081-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9678c09 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:30:16.396  WARN 12420 --- [http-nio-8081-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@39fe779 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:30:21.399  WARN 12420 --- [http-nio-8081-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@73afa270 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:30:26.400  WARN 12420 --- [http-nio-8081-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@77115d8b (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:30:31.402  WARN 12420 --- [http-nio-8081-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@26b28621 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:30:36.405  WARN 12420 --- [http-nio-8081-exec-9] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@28801ca5 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:31:29.866  WARN 12420 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@c095e4f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:31:34.872  WARN 12420 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3f42ffd2 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:31:39.874  WARN 12420 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1489ad12 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:31:44.875  WARN 12420 --- [http-nio-8081-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3175d544 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-10-19 16:31:44.891 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where MAIL = ?
+2020-10-19 16:31:44.892 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : ==> Parameters: 1415128257@qq.com(String)
+2020-10-19 16:31:44.908 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.SpiderUserMapper.getUserByMail   : <==      Total: 1
+2020-10-19 16:31:44.908 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==>  Preparing: select ID, MAIL, USER_NAME, PASS_WORD, CREATE_TIME from spider_user where ID = ?
+2020-10-19 16:31:44.908 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : ==> Parameters: 1(Long)
+2020-10-19 16:31:44.923 DEBUG 12420 --- [http-nio-8081-exec-1] c.h.s.m.S.selectByPrimaryKey             : <==      Total: 1
+2020-10-19 16:32:04.153  INFO 12420 --- [lettuce-eventExecutorLoop-1-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was /47.100.164.178:6379
+2020-10-19 16:32:04.174  INFO 12420 --- [lettuce-nioEventLoop-4-2] i.l.core.protocol.ReconnectionHandler    : Reconnected to 47.100.164.178:6379

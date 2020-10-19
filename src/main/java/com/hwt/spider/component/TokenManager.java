@@ -27,7 +27,6 @@ public class TokenManager {
     public String createToken(Long userId){
         String token = UUID.randomUUID().toString();
         SpiderUser spiderUser = spiderUserMapper.selectByPrimaryKey(userId);
-        redisTemplate.boundValueOps(RedisKey.getLoginTokenKey(userId.toString())).set(token, 2, TimeUnit.HOURS);
         String jsonObject = JSON.toJSONString(spiderUser);
         redisTemplate.boundValueOps(RedisKey.getLoginTokenValue(token)).set(jsonObject, 2, TimeUnit.HOURS);
         return token;

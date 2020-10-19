@@ -45,9 +45,4 @@ public class LoginController {
         return ReturnResult.OK();
     }
 
-    @PostMapping("/getAccoutNum")
-    @ApiOperation(value = "获取账号", tags = "获取账号")
-    public Result<String> getAccoutNum(){
-        return ReturnResult.OK(spiderLoginService.getAccoutNum());
-    }
 }
