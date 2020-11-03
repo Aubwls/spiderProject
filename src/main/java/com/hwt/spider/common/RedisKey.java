@@ -11,7 +11,7 @@ public class RedisKey {
 
     private static final String LOGIN_TOKEN_VALUE = "LOGIN_TOKEN_VALUE:";
 
-    public static String getLoginTokenKey (String userId){
+    public static String getLoginTokenKey (Long userId){
         return LOGIN_TOKEN_KEY + userId;
     }
     public static String getLoginTokenValue (String token){
