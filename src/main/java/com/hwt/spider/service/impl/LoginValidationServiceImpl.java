@@ -34,21 +34,21 @@ public class LoginValidationServiceImpl implements LoginValidationService {
             log.error("账号未登录！");
             throw new BusinessException(401,"账号未登录！");
         }
-        String[] split = token.split("-");
-        Long userId = Long.parseLong(split[0]);
-        String realToken = split[1];
-        Object tokenJson = redisTemplate.boundValueOps(RedisKey.getLoginTokenKey(userId)).get();
-        JSONObject objectSession = JSONObject.parseObject(JSON.toJSONString(tokenJson));
-        log.info("objectSession="+objectSession);
-        if (objectSession == null || objectSession.get("userId") == null) {
-            log.info("登录失效");
-            throw new BusinessException(401,"登录失效");
-        }
-        //获得用户信息
-        Object userInfo = redisTemplate.boundValueOps(RedisKey.getLoginTokenValue(checkToken.toString())).get();
-        if (userInfo == null) {
-            log.error("用户信息不存在！");
-            throw new BusinessException(401,"登录失效！");
-        }
+//        String[] split = token.split("-");
+//        Long userId = Long.parseLong(split[0]);
+//        String realToken = split[1];
+//        Object tokenJson = redisTemplate.boundValueOps(RedisKey.getLoginTokenKey(userId)).get();
+//        JSONObject objectSession = JSONObject.parseObject(JSON.toJSONString(tokenJson));
+//        log.info("objectSession="+objectSession);
+//        if (objectSession == null || objectSession.get("userId") == null) {
+//            log.info("登录失效");
+//            throw new BusinessException(401,"登录失效");
+//        }
+//        //获得用户信息
+//        Object userInfo = redisTemplate.boundValueOps(RedisKey.getLoginTokenValue(checkToken.toString())).get();
+//        if (userInfo == null) {
+//            log.error("用户信息不存在！");
+//            throw new BusinessException(401,"登录失效！");
+//        }
     }
 }
