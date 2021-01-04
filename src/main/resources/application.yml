@@ -14,7 +14,7 @@ spring:
   redis:
     database: 1
     host: 47.100.164.178
-    port: 6379
+    port: 7379
     password: aubwls
 
 
