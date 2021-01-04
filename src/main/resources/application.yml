@@ -15,7 +15,7 @@ spring:
     database: 1
     host: 47.100.164.178
     port: 6379
-    password:
+    password: aubwls
 
 
 
