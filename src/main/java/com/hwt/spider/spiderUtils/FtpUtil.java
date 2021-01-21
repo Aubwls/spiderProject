@@ -16,7 +16,7 @@ import java.util.concurrent.LinkedBlockingQueue;
  */
 @Data
 @AllArgsConstructor
-public class FtpUtils {
+public class FtpUtil {
 
     /**
      * 维护FTPClient实例
@@ -206,6 +206,7 @@ public class FtpUtils {
             throw new RuntimeException("连接ftp失败");
         }
         ftpClient.setControlEncoding("GBK");
+        System.out.println(reply + "连接成功！");
         return ftpClient;
     }
 
@@ -254,5 +255,12 @@ public class FtpUtils {
             this.password = password;
             return this;
         }
+    }
+
+    public static void main(String[] args) throws IOException {
+        //连接配置
+        FtpUtil.FtpConfig ftpConfig = new FtpUtil.FtpConfig().setUserName("root")
+                .setPassword("h1415128257.").setIp("47.100.164.178").setPort(21);
+        FtpUtil.connectClient(ftpConfig);
     }
 }
